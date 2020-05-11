@@ -1,0 +1,136 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Oswald', system, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    8deg,
+    rgba(0,0,0, .25) 25%,
+    white 80%
+  )
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 img {
+  max-width: 50vw;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: rgb(6,65,136);
+}
+
+a {
+  color: rgb(136,6,165);
+  text-decoration: none;
+  filter: grayscale(100%);
+  will-change: filter;
+  transition: filter .5s ease;
+}
+
+a:hover,
+a:active {
+  filter: grayscale(0%);
+}
+
+.hidden {
+  display: none;
+}
+
+.content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2rem;
+  min-height: 18rem;
+  text-align: center;
+}
+
+.top {
+  flex: 1;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects {
+  margin: 2rem 0 0 0;
+  padding: 0 3rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  display: block;
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-decoration: none;
+  width: 10rem;
+  max-width: 35vw;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.footer {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+}
+
+.github {
+  margin-left: -2rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.github .url {
+  margin-left: .25rem;
+}
