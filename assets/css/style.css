@@ -49,7 +49,9 @@ h4 b {
 
 /* Links */
 a {
-  padding: .25rem .75rem;
+  display: inline-flex;
+  align-items: center;
+  padding: .5rem .75rem;
   margin-left: -.5rem;
   font-family: Oswald, sans-serif;
   text-decoration: none;
@@ -66,14 +68,14 @@ a:hover {
 a.link {
   display: inline-flex;
   margin: .5rem 0;
-  padding: .75rem 1.25rem .85rem;
+  padding: .5rem 1rem .875rem;
   font-size: 1.75rem;
   line-height: 1.75rem;
   border-radius: .5rem;
 }
 
 a.link .icon {
-  margin: 0 .5rem 0 -1rem;
+  margin: .3rem .5rem 0 -1rem;
   width: 2rem;
   height: 2rem;
   fill: rgb(193,29,197);
@@ -128,7 +130,38 @@ a.link:hover .icon rect {
   }
 }
 
+.col.full {
+  padding: 0;
+}
+
 /* Section */
+section {
+  overflow: hidden;
+}
+
+section.highlight .col:first-of-type {
+  min-width: 35%;
+  padding-right: 1rem;
+}
+
+section.highlight .mask {
+  height: 28.5rem;
+}
+
+section.highlight .mask img {
+  width: 40rem;
+}
+
+@media screen and (min-width: 1024px) {
+  section.highlight .mask {
+    height: 60rem;
+  }
+
+  section.highlight .mask img {
+    width: 78rem;
+  }
+}
+
 section.focus {
   color: white;
   background-color: rgb(0,28,100);
@@ -149,10 +182,11 @@ section h3 {
   margin: 0;
   padding: 0;
   font-size: .85rem;
-  font-weight: 400;
+  font-weight: 500;
   color: rgb(81,161,255);
   transform: rotate(270deg);
   transform-origin: top right;
+  opacity: .85;
 }
 
 @media screen and (min-width: 1024px) {
@@ -163,7 +197,16 @@ section h3 {
   }
 }
 
+/* Mask */
+.mask {
+  overflow: hidden;
+}
+
 /* Header */
+header {
+  margin-bottom: 2rem;
+}
+
 header .col {
   padding: 2rem 1rem;
 }
@@ -210,14 +253,39 @@ header nav ul {
   display: flex;
 }
 
-header nav ul li {
-  margin: 0 .5rem;
+header nav li {
+  margin: 0 .25rem;
 }
 
-header nav ul a {
-  font-weight: 400;
+header nav a {
+  font-weight: 300;
   font-size: 1.1rem;
   text-transform: uppercase;
+}
+
+header nav li.active a {
+  font-weight: 500;
+  color: rgb(0,28,100);
+}
+
+header nav li.active a:hover {
+  color: white;
+  background-color: rgb(0,28,100);
+}
+
+header nav li a.icon span {
+  display: none;
+}
+
+header nav li a.icon svg {
+  margin: -.125rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: rgb(193,29,197);
+}
+
+header nav li a.icon:hover svg {
+  fill: white;
 }
 
 /* Highlight */
