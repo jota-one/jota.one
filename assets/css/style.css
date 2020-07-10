@@ -17,7 +17,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -26,10 +26,16 @@ body {
 }
 
 /* Texts */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
   font-family: Oswald, sans-serif;
   font-weight: 100;
   text-transform: uppercase;
+}
+
+h5, h6 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 h4 {
@@ -51,6 +57,16 @@ h4.secondary {
 
 h4 b {
   font-weight: 400;
+}
+
+/* Lists */
+ul {
+  list-style-type: '­–  ';
+  padding: 0 1rem;
+}
+
+li {
+  margin-top: 1rem;
 }
 
 /* Links */
@@ -162,7 +178,7 @@ section.highlight .mask img {
 
 @media screen and (min-width: 1024px) {
   section.highlight .mask {
-    height: 60rem;
+    height: 40rem;
   }
 
   section.highlight .mask img {
@@ -175,15 +191,19 @@ section.highlight .col:first-of-type {
   padding-bottom: 1rem;
 }
 
+section.highlight h3 {
+  top: 1.25rem;
+}
+
 @media screen and (min-width: 1024px) {
+  section.highlight h3 {
+    top: 3.25rem;
+  }
+
   section.highlight .col:first-of-type {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-}
-
-section.highlight h3 {
-  top: 1.25rem;
 }
 
 section.focus {
