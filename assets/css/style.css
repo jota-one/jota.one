@@ -66,7 +66,7 @@ ul {
 }
 
 li {
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 
 /* Links */
@@ -169,16 +169,16 @@ section {
 }
 
 section.highlight .mask {
-  height: 28.5rem;
+  height: 38rem;
 }
 
 section.highlight .mask img {
-  width: 40rem;
+  width: 50rem;
 }
 
 @media screen and (min-width: 1024px) {
   section.highlight .mask {
-    height: 40rem;
+    height: 53rem;
   }
 
   section.highlight .mask img {
