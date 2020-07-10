@@ -5,56 +5,143 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jota</title>
   <meta name="description" content="We build web products">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/fonts/Oswald/fontface.css">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="top content">
-      <header class="header">
-        <h1>
-          <span class="hidden">Jota</span>
-          <img src="/assets/svg/jota.svg">
-        </h1>
-        <h2>We build web products</h2>
-      </header>
-      <ul class="projects">
-        <li>
-          <a class="project" href="https://bezu.lu" target="_blank">
-            <img src="/assets/svg/bezulu.svg">
-            <div class="url">
-              bezu.lu
-            </div>
-          </a>
-        </li>
-        <li>
-          <a class="project" href="https://meatapp.io" target="_blank">
-            <img src="/assets/svg/meat.svg">
-            <div class="url">
-              meatapp.io
-            </div>
-          </a>
-        </li>
-        <li>
-          <a class="project" href="https://ferencfarkas.org" target="_blank">
-            <img src="/assets/svg/ferencfarkas.svg">
-            <div class="url">
-              ferencfarkas.org
-            </div>
-          </a>
-        </li>
-      </ul>
+  <header>
+    <div class="row">
+      <div class="col">
+        <h1><span>Jota</span></h1>
+        <h2>We build<br>web products</h2>
+      </div>
+      <nav class="col">
+        <ul>
+          <li>
+            <a href="#meat">Meat</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#labs">Labs</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a class="icon github" href="https://github.com/jota-one">
+              <span>GitHub</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <footer class="footer">
-      <div class="content">
-        <a class="github" href="https://github.com/jota-one" target="_blank">
-          <img src="/assets/svg/github.svg">
-          <div class="url">
-            github.com/jota-one
-          </div>
+  </header>
+  <main role="main">
+    <section id="meat" class="highlight">
+      <div class="row">
+        <h3>Meat</h3>
+        <div class="col">
+          <h4>Discover <b>MEAT</b></h4>
+          <p>
+            On the road project time and budget reporting.
+          </p>
+          <a class="link" href="https://www.meatapp.io" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M10.5 18.5L11.92 19.92L19.84 12L11.92 4.07996L10.5 5.49996L17 12L10.5 18.5Z"/>
+              <rect x="1.02197" y="10.9933" width="16.9809" height="1.99778"/>
+            </svg>
+            meatapp.io
+          </a>
+        </div>
+        <div class="col"></div>
+      </div>
+    </section>
+    <section id="projects" class="focus">
+      <div class="row">
+        <h3>Projects</h3>
+        <div class="col">
+          <h4>ferencfarkas.org</h4>
+          <p>Bla bla...</p>
+          <a class="link" href="https://ferencfarkas.org" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M10.5 18.5L11.92 19.92L19.84 12L11.92 4.07996L10.5 5.49996L17 12L10.5 18.5Z"/>
+              <rect x="1.02197" y="10.9933" width="16.9809" height="1.99778"/>
+            </svg>
+            ferencfarkas.org
+          </a>
+        </div>
+        <div class="col">
+          <h4>Be Zulu!</h4>
+          <p>Bla bla...</p>
+          <a class="link" href="https://bezu.lu" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M10.5 18.5L11.92 19.92L19.84 12L11.92 4.07996L10.5 5.49996L17 12L10.5 18.5Z"/>
+              <rect x="1.02197" y="10.9933" width="16.9809" height="1.99778"/>
+            </svg>
+            bezu.lu
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="labs">
+      <div class="row">
+        <h3>Labs</h3>
+        <div class="col">
+          <h4>Drosse</h4>
+          <p>Bla bla...</p>
+          <a class="link" href="https://drosse.dev" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M10.5 18.5L11.92 19.92L19.84 12L11.92 4.07996L10.5 5.49996L17 12L10.5 18.5Z"/>
+              <rect x="1.02197" y="10.9933" width="16.9809" height="1.99778"/>
+            </svg>
+            drosse.dev
+          </a>
+        </div>
+        <div class="col">
+          <h4>Ourcecode</h4>
+          <p>Bla bla...</p>
+          <p>
+            <a class="link" href="https://ource.app" target="_blank">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M10.5 18.5L11.92 19.92L19.84 12L11.92 4.07996L10.5 5.49996L17 12L10.5 18.5Z"/>
+                <rect x="1.02197" y="10.9933" width="16.9809" height="1.99778"/>
+              </svg>
+              ource.app
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="focus">
+      <div class="row">
+        <h3>About</h3>
+        <div class="col">
+          <h4>
+            We build <br>web products<br>for our needs
+          </h4>
+          <p>Bla bla...</p>
+        </div>
+        <div class="col">
+          <h4 class="secondary">
+            Which happen to<br>match yours<br>as well...
+          </h4>
+          <p>Bla bla...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="row">
+      <div class="col">
+        <h3>Contact us</h3>
+        <a href="mailto:juniors@jota.one">
+          juniors@jota.one
         </a>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 </html>
