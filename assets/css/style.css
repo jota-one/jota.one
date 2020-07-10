@@ -7,12 +7,18 @@ html, body {
 
 body {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.2;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 22px;
+  }
 }
 
 * {
@@ -27,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h4 {
-  margin: 0 0 1rem;
+  margin: 0;
   font-size: 2rem;
   color: rgb(0,28,100);
 }
@@ -139,9 +145,11 @@ section {
   overflow: hidden;
 }
 
-section.highlight .col:first-of-type {
-  min-width: 35%;
-  padding-right: 1rem;
+@media screen and (min-width: 1024px) {
+  section.highlight .col:first-of-type {
+    min-width: 35%;
+    padding-right: 1rem;
+  }
 }
 
 section.highlight .mask {
@@ -159,6 +167,18 @@ section.highlight .mask img {
 
   section.highlight .mask img {
     width: 78rem;
+  }
+}
+
+section.highlight .col:first-of-type {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  section.highlight .col:first-of-type {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -203,10 +223,6 @@ section h3 {
 }
 
 /* Header */
-header {
-  margin-bottom: 2rem;
-}
-
 header .col {
   padding: 2rem 1rem;
 }
