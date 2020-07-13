@@ -83,8 +83,9 @@ a {
 }
 
 p a {
-  padding: 0;
+  padding: 0 .25rem;
   margin: 0;
+  font-family: inherit;
 }
 
 a:hover {
