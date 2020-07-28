@@ -9,7 +9,7 @@ body {
   font-family: 'Assistant', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.4;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,14 +39,14 @@ h5, h6 {
 }
 
 h4 {
-  margin: 0;
+  margin: 0 0 3rem;
   font-size: 2rem;
   color: rgb(0,28,100);
 }
 
 @media screen and (min-width: 1024px) {
   h4 {
-    margin: 0 0 2rem;
+    margin: 0 0 4rem;
     font-size: 2.75rem;
   }
 }
@@ -141,7 +141,7 @@ a.link:hover .icon rect {
 
 .col {
   flex: 1;
-  padding: 3rem 3rem;
+  padding: 3rem 4rem;
 }
 
 .col:nth-child(3) {
@@ -166,8 +166,6 @@ a.link:hover .icon rect {
 section {
   overflow: hidden;
 }
-
-
 
 section.highlight .mask {
   height: 38rem;
@@ -234,7 +232,7 @@ section.focus h4.secondary {
 section h3 {
   position: absolute;
   top: 3.25rem;
-  right: calc(100% - 1rem);
+  right: calc(100% - 1.75rem);
   margin: 0;
   padding: 0;
   font-size: .85rem;
@@ -260,7 +258,7 @@ section h3 {
 
 /* Header */
 header .col {
-  padding: 2rem 1rem;
+  padding: 2rem;
 }
 
 header .col:nth-child(2) {
@@ -340,11 +338,70 @@ header nav li a.icon:hover svg {
   fill: white;
 }
 
-/* Highlight */
+/* Product */
+.row.product:last-of-type {
+  padding-bottom: 4rem;
+}
 
-/* Projects */
+.row.product .col.image {
+  order: 1;
+  position: relative;
+  padding-bottom: 2rem;
+}
 
-/* Labs */
+.row.product .col.image.left {
+  padding-right: 0;
+}
+
+.row.product .col.image.right {
+  padding-left: 0;
+}
+
+.row.product .col.image img {
+  width: 100%;
+  max-width: 35em;
+}
+
+.row.product .col.image a:hover {
+  background: transparent;
+}
+
+.row.product .mask {
+  height: 35rem;
+  border-bottom: 1px solid rgba(81,161,255, .5);
+}
+
+.row.product .col.text {
+  order: 2;
+  padding-bottom: 0;
+}
+
+.row.product a.link {
+  margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .row.product .col.image {
+    max-width: calc(100% - 3rem);
+    flex-shrink: 2;
+  }
+
+  .row.product .mask {
+    height: 34rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .row.product .col.image {
+    max-width: 37rem;
+  }
+
+  .row.product .col.text {
+    order: 1;
+    padding-top: 7rem;
+  }
+}
 
 /* Footer */
 footer {
