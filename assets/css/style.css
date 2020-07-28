@@ -425,20 +425,16 @@ footer h3 {
   color: rgb(0,28,100);
 }
 
-footer .col:last-of-type {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+footer .npm {
+  position: absolute;
+  right: 3.5rem;
+  bottom: 3rem;
 }
 
-footer .col:last-of-type a {
-  margin-bottom: .3rem;
-}
-
-footer .col:last-of-type svg {
+footer .npm svg {
   fill: rgb(193,29,197);
 }
 
-footer .col:last-of-type a:hover svg {
+footer .npm:hover svg {
   fill: rgb(255,255,255);
 }
