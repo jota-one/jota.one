@@ -1,12 +1,15 @@
-baseURL: "http://example.org/"
+baseURL: "https://jota.one/"
 languageCode: "en-us"
-title: "My New Hugo Site"
+title: "Jota"
 theme: ["jota-shortcodes", "jota-corp"]
 markup:
   goldmark:
     renderer:
       unsafe: true
 params:
+  description: Ferenc Farkas official website.
+  og:
+    image: /img/og-image.jpg
   jota:
     config:
       contentMaxWidth: "1400px"
