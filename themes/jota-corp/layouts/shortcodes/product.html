@@ -1,0 +1,42 @@
+{{- $isHero := (eq (.Get "hero") "true") -}}
+{{- $isMirror := (eq (.Get "mirror") "true") -}}
+{{- $isMobileImg := (eq (.Get "mobile-image") "true") -}}
+<div class="product{{ if $isHero }} hero{{ end }}{{ if $isMirror }} mirror{{ end }}{{ if $isMobileImg }} mobile-img{{ end }}">
+  <div class="row">
+    <div class="column">
+      {{- if and $isHero (.Get "title") -}}
+      <h4 class="title">{{- .Get "title" | markdownify -}}</h4>
+      {{- end -}}
+      <div class="image-mask">
+        <div class="image-wrapper">
+          <img src="{{ .Get "image" }}">
+        </div>
+        <div class="image-mask-gradient"></div>
+      </div>
+      {{- if $isHero -}}
+      <div class="text-mask">
+        <div class="text-mask-bg"></div>
+        <div class="text-wrapper">
+          {{- if .Get "subtitle" -}}
+          <h5 class="sub-title">{{- .Get "subtitle" | markdownify -}}</h5>
+          {{- end -}}
+          <div class="text-inner">
+            {{- .Inner -}}
+          </div>
+        </div>
+      </div>
+      {{- end -}}
+    </div>
+    {{- if not $isHero -}}
+    <div class="column">
+      {{- if .Get "title" -}}
+      <h4 class="title">{{- .Get "title" | markdownify -}}</h4>
+      {{- end -}}
+      {{- if .Get "subtitle" -}}
+      <h5 class="sub-title">{{- .Get "subtitle" | markdownify -}}</h5>
+      {{- end -}}
+      {{- .Inner -}}
+    </div>
+    {{- end -}}
+  </div>
+</div>

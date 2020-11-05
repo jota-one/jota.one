@@ -1,0 +1,30 @@
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "My New Hugo Site"
+theme: ["jota-shortcodes", "jota-corp"]
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+params:
+  jota:
+    config:
+      contentMaxWidth: "1400px"
+menu:
+  main:
+    - name: Meat
+      identifier: meat
+      weight: 100
+      url: "/#meat"
+    - name: Products
+      identifier: products
+      weight: 200
+      url: "/#products"
+    - name: Projects
+      identifier: projects
+      weight: 200
+      url: "/#projects"
+    - name: About
+      identifier: about
+      weight: 400
+      url: "/#about"

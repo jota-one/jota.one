@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('woff2/Lato-Thin.woff2') format('woff2'),
+    url("woff/Lato-Thin.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('woff2/Lato-Light.woff2') format('woff2'),
+    url("woff/Lato-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('woff2/Lato-Regular.woff2') format('woff2'),
+    url("woff/Lato-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('woff2/Lato-Medium.woff2') format('woff2'),
+    url("woff/Lato-Meidum.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('woff2/Lato-Bold.woff2') format('woff2'),
+    url("woff/Lato-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('woff2/Lato-Heavy.woff2') format('woff2'),
+    url("woff/Lato-Heavy.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('woff2/Lato-Black.woff2') format('woff2'),
+    url("woff/Lato-Black.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}

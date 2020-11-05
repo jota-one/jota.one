@@ -1,0 +1,10 @@
+{{- partial "head/_meta" . -}}
+<link rel="stylesheet" href="/css/jota.shortcodes.css">
+{{- partial "head/_styles" . -}}
+{{- partial "head/styles" . -}}
+{{- partial "head/_scripts" . -}}
+<style>
+  .content {
+    max-width: {{- .Site.Params.jota.config.contentMaxWidth -}};
+  }
+</style>
