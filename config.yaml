@@ -1,4 +1,4 @@
-baseURL: "https://jota.one/"
+baseURL: "https://jota.one"
 languageCode: "en-us"
 title: "Jota"
 theme: ["jota-shortcodes", "jota-corp"]
