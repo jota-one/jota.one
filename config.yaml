@@ -7,9 +7,9 @@ markup:
     renderer:
       unsafe: true
 params:
-  description: Ferenc Farkas official website.
+  description: We build web products
   og:
-    image: /img/og-image.jpg
+    image: /img/og.png
   jota:
     config:
       contentMaxWidth: "1400px"
