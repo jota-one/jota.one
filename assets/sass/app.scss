@@ -110,6 +110,10 @@ blockquote {
   }
 }
 
+.focus .secondary {
+  color: $c-secondary-jo;
+}
+
 /* Section */
 section {
   color: $c-text;
@@ -127,7 +131,7 @@ section {
     }
 
     .column.secondary {
-      h4, p {
+      h4 {
         color: $c-secondary-jo;
       }
     }
