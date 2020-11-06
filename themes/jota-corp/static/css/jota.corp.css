@@ -139,6 +139,10 @@ footer {
 }
 
 /* Section */
+section {
+  overflow: hidden;
+}
+
 section.labelled {
   overflow: hidden;
   padding-left: 1.5rem;
@@ -177,7 +181,7 @@ section.labelled h3 {
 /* Row, column */
 @media screen and (max-width: 1024px) {
   .row {
-    margin: 0 -1.25rem;
+    margin: 0 -3.25rem;
   }
 }
 
@@ -265,7 +269,6 @@ section.labelled h3 {
 
 .product:not(.hero).mobile-img .image-wrapper img {
   margin: 0 auto;
-  width: 85%;
   height: auto;
 }
 
