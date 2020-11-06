@@ -269,6 +269,7 @@ section.labelled h3 {
 
 .product:not(.hero).mobile-img .image-wrapper img {
   margin: 0 auto;
+  max-width: 100%;
   height: auto;
 }
 
