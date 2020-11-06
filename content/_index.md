@@ -4,19 +4,18 @@ date: 2019-03-17T18:18:43Z
 ---
 
 {{% section labelled %}}
-### Meat
+### Products
 
-{{% product hero="true" title="Discover **Meat**" subtitle="On the road time and budget reporting" image="/img/meat-desktop.png" %}}
+{{% product meat %}}
 We developped the easiest tool to track your projects, check it out!
 
 {{< product-link label="meatapp.io" target="https://meatapp.io" >}}
 {{% /product %}}
 {{% /section %}}
 
-{{% section labelled focus %}}
-### Products
+{{% section focus %}}
 <!-- Drosse -->
-{{% product title="Drosse" subtitle="Dynamic JS mock server" image="/img/drosse-desktop.png" %}}
+{{% product drosse %}}
 
 - Need to mock your data while developing your cool frontend app?
 - Locally?
@@ -35,7 +34,7 @@ We developped the easiest tool to track your projects, check it out!
 {{% section labelled %}}
 ### Projects
 <!-- Be Zulu -->
-{{% product mirror="true" title="Be Zulu!" subtitle="Podcast web player" image="/img/bezulu-mobile.png" mobile-image="true" %}}
+{{% product bezulu %}}
 
 Podcast is a great technology, especially as an iTunes user...
 
@@ -52,7 +51,7 @@ We tried to address those issues for the **Be Zulu!** crew, hope you enjoy the s
 {{% /product %}}
 
 <!-- ferencfarkas.org -->
-{{% product title="ferencfarkas.org" subtitle="[Hugo](https://gohugo.io)-powered website with SPA search app" image="/img/ferencfarkas-mobile.png" mobile-image="true" %}}
+{{% product ferencfarkas %}}
 
 **Ferenc Farkas** was a famous hungarian classical music composer.
 
@@ -106,9 +105,6 @@ products we truly believe in. It has made us better developers and better
 consultants in addition to build up new skills every day; and that feels
 very enhancing.
 </p>
-
-So even if we fail at doing our business, we'll continue acting like we did for
-the last 2 years 💪
 
 {{% /column %}}
 {{% /row %}}

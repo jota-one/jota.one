@@ -1,0 +1,24 @@
+bezulu:
+  image: /img/bezulu-mobile.png
+  mirror: true
+  mobileImage: true
+  subTitle: "Podcast web player"
+  title: "Be Zulu!"
+  url: https://bezu.lu
+drosse:
+  image: /img/drosse-desktop.png
+  subTitle: "Dynamic JS mock server"
+  title: Drosse
+  url: https://drosse.dev
+ferencfarkas:
+  image: /img/ferencfarkas-mobile.png
+  mobileImage: true
+  subTitle: "[Hugo](https://gohugo.io)-powered website with SPA search app"
+  title: ferencfarkas.org
+  url: https://ferencfarkas.org
+meat:
+  hero: true
+  image: /img/meat-desktop.png
+  subTitle: On the road time and budget reporting
+  title: "Discover **Meat**"
+  url: https://meatapp.io

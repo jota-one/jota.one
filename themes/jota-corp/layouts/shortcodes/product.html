@@ -1,24 +1,31 @@
-{{- $isHero := (eq (.Get "hero") "true") -}}
-{{- $isMirror := (eq (.Get "mirror") "true") -}}
-{{- $isMobileImg := (eq (.Get "mobile-image") "true") -}}
-<div class="product{{ if $isHero }} hero{{ end }}{{ if $isMirror }} mirror{{ end }}{{ if $isMobileImg }} mobile-img{{ end }}">
+{{- $id := or (.Get 0) "" -}}
+{{- $product := index .Site.Data.products $id -}}
+<div class="product{{ if $product.hero }} hero{{ end }}{{ if $product.mirror }} mirror{{ end }}{{ if $product.mobileImage }} mobile-img{{ end }}">
   <div class="row">
     <div class="column">
-      {{- if and $isHero (.Get "title") -}}
-      <h4 class="title">{{- .Get "title" | markdownify -}}</h4>
+      {{- if and $product.hero $product.title -}}
+      <h4 class="title">{{- $product.title | markdownify -}}</h4>
       {{- end -}}
+      {{- if $product.url -}}
+      <a href="{{ $product.url }}" target="_blank" class="image-mask">
+      {{- else -}}
       <div class="image-mask">
+      {{- end -}}
         <div class="image-wrapper">
-          <img src="{{ .Get "image" }}">
+          <img src="{{ $product.image }}">
         </div>
         <div class="image-mask-gradient"></div>
+      {{- if $product.url -}}
+      </a>
+      {{- else -}}
       </div>
-      {{- if $isHero -}}
+      {{- end -}}
+      {{- if $product.hero -}}
       <div class="text-mask">
         <div class="text-mask-bg"></div>
         <div class="text-wrapper">
-          {{- if .Get "subtitle" -}}
-          <h5 class="sub-title">{{- .Get "subtitle" | markdownify -}}</h5>
+          {{- if $product.subTitle -}}
+          <h5 class="sub-title">{{- $product.subTitle | markdownify -}}</h5>
           {{- end -}}
           <div class="text-inner">
             {{- .Inner -}}
@@ -27,13 +34,13 @@
       </div>
       {{- end -}}
     </div>
-    {{- if not $isHero -}}
+    {{- if not $product.hero -}}
     <div class="column">
-      {{- if .Get "title" -}}
-      <h4 class="title">{{- .Get "title" | markdownify -}}</h4>
+      {{- if $product.title -}}
+      <h4 class="title">{{- $product.title | markdownify -}}</h4>
       {{- end -}}
-      {{- if .Get "subtitle" -}}
-      <h5 class="sub-title">{{- .Get "subtitle" | markdownify -}}</h5>
+      {{- if $product.subTitle -}}
+      <h5 class="sub-title">{{- $product.subTitle | markdownify -}}</h5>
       {{- end -}}
       {{- .Inner -}}
     </div>
