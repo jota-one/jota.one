@@ -6,4 +6,6 @@
 <meta property="og:url" content="{{ .Page.Permalink }}" />
 <meta property="og:description" content="{{ .Site.Params.Description }}" />
 <meta property="og:image" content="{{ .Site.Params.Og.Image }}" />
+<link rel="icon" href="/favicon.svg">
+<title>{{ .Site.Title }}</title>
 {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}

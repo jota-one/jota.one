@@ -126,8 +126,10 @@ section {
       color: white;
     }
 
-    .column.secondary h4 {
-      color: $c-secondary-jo;
+    .column.secondary {
+      h4, p {
+        color: $c-secondary-jo;
+      }
     }
   }
 }

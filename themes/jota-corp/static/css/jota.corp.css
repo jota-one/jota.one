@@ -230,7 +230,7 @@ section.labelled h3 {
 
 @media screen and (min-width: 768px) {
   .product:not(.hero) .title {
-    margin-top: 1rem;
+    margin-top: 0;
   }
 }
 
