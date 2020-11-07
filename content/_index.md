@@ -74,16 +74,20 @@ lowered the hosting costs to a minimum: **zero** 🤓
 ### About
 {{% row %}}
 {{% column %}}
+<img class="juniors" src="/img/juniors-at-work.jpg" srcset="/img/juniors-at-work@2x.jpg 2x, /img//img/juniors-at-work@3x.jpg 3x">
+{{% /column %}}
+{{% /row %}}
+{{% row %}}
+{{% column %}}
 #### Who we are
-
 <p class="secondary">
-We are 2 experienced fullstack developers based in Switzerland and have been
-in the game for the last 20 years. We currently work as senior consultants.
+We are 2 experienced fullstack web developers based in Switzerland. We've
+been in the game for the last 20 years and currently work as senior consultants.
 </p>
 
 **Jota** is a side project we started in 2019 and work on during our free time.
-We give our hearts at it and take all the time needed to build meaningful,
-performant and easy-to-use softwares.
+We give our hearts at it and take all the time and effort needed to build
+meaningful, performant and easy-to-use softwares.
 
 Our goal is to sell our enterprise-grade software(s) and release open-source
 projects for the community. We plan to start selling in 2021.
@@ -91,7 +95,7 @@ projects for the community. We plan to start selling in 2021.
 {{% column %}}
 #### Why we do this
 
-We are passionate developers and have great fun building our products.
+We are passionate in what we do and have great fun building web applications.
 We also feel indebted to the open-source community for all the great softwares
 we use freely in our daily work and want to give back.
 
