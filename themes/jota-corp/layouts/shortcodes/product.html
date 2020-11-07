@@ -12,7 +12,7 @@
       <div class="image-mask">
       {{- end -}}
         <div class="image-wrapper">
-          <img src="{{ $product.image }}">
+          <img src="{{ $product.image }}" srcset="{{ $product.imageSet }}">
         </div>
         <div class="image-mask-gradient"></div>
       {{- if $product.url -}}

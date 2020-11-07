@@ -1,5 +1,6 @@
 bezulu:
   image: /img/bezulu-mobile.png
+  imageSet: /img/bezulu-mobile@2x.png 2x, /img/bezulu-mobile@3x.png 3x
   mirror: true
   mobileImage: true
   subTitle: "Podcast web player"
@@ -7,11 +8,13 @@ bezulu:
   url: https://bezu.lu
 drosse:
   image: /img/drosse-desktop.png
+  imageSet: /img/drosse-desktop@2x.png 2x, /img/drosse-desktop@3x.png 3x
   subTitle: "Dynamic JS mock server"
   title: Drosse
   url: https://drosse.dev
 ferencfarkas:
   image: /img/ferencfarkas-mobile.png
+  imageSet: /img/ferencfarkas-mobile@2x.png 2x, /img/ferencfarkas-mobile@3x.png 3x
   mobileImage: true
   subTitle: "[Hugo](https://gohugo.io)-powered website with SPA search app"
   title: ferencfarkas.org
@@ -19,6 +22,7 @@ ferencfarkas:
 meat:
   hero: true
   image: /img/meat-desktop.png
+  imageSet: /img/meat-desktop@2x.png 2x, /img/meat-desktop@3x.png 3x
   subTitle: On the road time and budget reporting
   title: "Discover **Meat**"
   url: https://meatapp.io
