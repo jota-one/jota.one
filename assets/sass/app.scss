@@ -13,6 +13,7 @@
   );
   z-index: -1;
   pointer-events: none;
+  user-select: none;
 }
 
 /* Header */
@@ -235,23 +236,16 @@ a:not(.image-mask) {
 }
 
 img.juniors {
-  float: left;
   width: 12rem;
   height: 12rem;
-  // margin-bottom: -5rem;
+  margin: 1rem auto -3rem auto;
   border-radius: 50%;
   border: 0.5rem solid rgba(255,255,255, .125);
 }
 
-@media screen and (min-width: 768px) {
-  img.juniors {
-    margin-bottom: -2rem;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   img.juniors {
-    margin-bottom: -4rem;
+    margin-bottom: -5rem;
   }
 }
 
