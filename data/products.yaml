@@ -9,7 +9,7 @@ bezulu:
 drosse:
   image: /img/drosse-desktop.png
   imageSet: /img/drosse-desktop@2x.png 2x, /img/drosse-desktop@3x.png 3x
-  subTitle: "Dynamic JS mock server"
+  subTitle: "Dynamic JavaScript mock server"
   title: Drosse
   url: https://drosse.dev
 ferencfarkas:

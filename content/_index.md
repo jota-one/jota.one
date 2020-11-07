@@ -17,7 +17,7 @@ We developped the easiest tool to track your projects, check it out!
 <!-- Drosse -->
 {{% product drosse %}}
 
-- Need to mock your data while developing your cool frontend app?
+- Need to mock your API while developing your cool frontend app?
 - Locally?
 - As an `npm` dev dependency of your project?
 - Need to modify data on POST calls?
