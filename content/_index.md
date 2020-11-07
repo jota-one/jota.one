@@ -95,13 +95,15 @@ projects for the community. We plan to start selling in 2021.
 {{% column %}}
 #### Why we do this
 
-We are passionate in what we do and have great fun building web applications.
+We have passion for building web applications and have great fun
+learning and improving our coding skills.
+
 We also feel indebted to the open-source community for all the great softwares
 we use freely in our daily work and want to give back.
 
-We also want to experience running a business of our own, be it aside of our
+We want to experience running our own business, be it aside of our
 main job, as a collaboration with our current employers or fully
-indenpendantly.
+independently.
 
 <p class="secondary">
 We started Jota because we deeply enjoy conceiving, designing and implementing
