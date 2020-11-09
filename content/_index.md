@@ -101,10 +101,6 @@ learning and improving our coding skills.
 We also feel indebted to the open-source community for all the great softwares
 we use freely in our daily work and want to give back.
 
-We want to experience running our own business, be it aside of our
-main job, as a collaboration with our current employers or fully
-independently.
-
 <p class="secondary">
 We started Jota because we deeply enjoy conceiving, designing and implementing
 products we truly believe in. It has made us better developers and better
