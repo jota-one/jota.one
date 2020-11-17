@@ -1,11 +1,8 @@
 @import 'variables';
 
-.body-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+html {
+  background-position: bottom;
+  background-size: 100vh;
   background-image: linear-gradient(
     -170deg,
    rgba(128,128,128, 0),
