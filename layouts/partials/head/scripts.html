@@ -1,0 +1,34 @@
+<script>
+  (function() {
+    window.addEventListener('DOMContentLoaded', function() {
+      var logo = document.querySelector('header .logo')
+      var nav = document.querySelector('header nav')
+      var headerBg = document.querySelector('header .background')
+      var logoTxt = document.querySelector('header .logo h2')
+      var main = document.querySelector('main')
+
+      window.addEventListener('scroll', function() {
+        var scrolled = window.pageYOffset
+        var vpHeight = window.innerHeight
+        var scaleCoeff = (scrolled * 5) / vpHeight
+        var opacityInCoeff = (scrolled * 3) / vpHeight
+        var scale = scaleCoeff > 1.5 ? 1 : 2.5 - scaleCoeff
+        var opacityIn = opacityInCoeff > 1 ? 1 : opacityInCoeff
+        var mainTop = main.getBoundingClientRect().y
+        var opacityOut = 120 / (mainTop * 2)
+
+        logo.style.transform = 'scale(' + scale + ')'
+        nav.style.opacity = opacityIn
+        main.style.opacity = opacityIn
+
+        if (mainTop <= 120) {
+          headerBg.style.opacity = mainTop <= 0 ? 1 : opacityOut - 1
+          logoTxt.style.opacity = mainTop <= 0 ? 0 : 1 - opacityOut
+        } else {
+          headerBg.style.opacity = 0
+          logoTxt.style.opacity = 1
+        }
+      })
+    })
+  })()
+</script>
