@@ -1,0 +1,28 @@
+{% set section = get_section(path="_index.md") %}
+
+<nav id="navigation">
+  <div class="container">
+    <ul class="internal">
+    {%- for page in section.pages -%}
+      <li>
+      {%- if page.path == current_path -%}
+        {{ page.title }}
+      {%- else -%}
+        <a href="{{page.path}}" class="link">
+          {{ page.title }}
+        </a>
+      {%- endif -%}
+      </li>
+    {%- endfor -%}
+    </ul>
+    <ul class="external">
+    {%- for social in config.extra.social -%}
+      <li>
+        <a href="{{social.url}}" target="_blank" class="link">
+          <j-icon name="{{social.icon}}"></j-icon>
+        </a>
+      </li>
+    {%- endfor -%}
+    </ul>
+  </div>
+</nav>

@@ -1,2 +1,0 @@
-{{ $s := resources.Get "sass/app.scss" | toCSS | minify }}
-<link rel="stylesheet" href="{{ $s.Permalink }}" media="screen"/>

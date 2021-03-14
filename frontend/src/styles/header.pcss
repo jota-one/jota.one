@@ -1,0 +1,37 @@
+#header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: var(--s-header-height);
+
+  .logo {
+    position: relative;
+    display: inline-block;
+
+    .theme-home & {
+      display: none;
+    }
+
+    #apostrophe path {
+      fill: var(--c-logo-background);
+      transition: fill 0.15s ease-in-out;
+    }
+
+    &:hover {
+      #apostrophe path {
+        fill: var(--c-logo-background-hover);
+      }
+    }
+  }
+
+  j-logo {
+    position: absolute;
+    top: var(--s-layout-left-offset);
+    left: var(--s-layout-left-offset);
+
+    path {
+      fill: white;
+    }
+  }
+}

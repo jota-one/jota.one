@@ -1,7 +1,0 @@
-{{ $params := print (.Get 0) (.Get 1) (.Get 2) }}
-{{ $isFull := strings.Contains $params "full" }}
-<section class="{{ .Get 0 }} {{ .Get 1 }} {{ .Get 2 }}">
-  <div class="content{{ if $isFull }} full{{ end }}">
-    {{ .Inner }}
-  </div>
-</section>

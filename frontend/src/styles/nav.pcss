@@ -1,0 +1,47 @@
+#navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: var(--s-layout-left-offset);
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-weight: 900;
+  color: var(--c-primary);
+
+  .internal,
+  .external {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .link {
+    text-decoration: none;
+    color: var(--c-secondary);
+    transition: color 0.15s ease-in-out;
+
+    &:hover {
+      color: var(--c-primary);
+    }
+  }
+
+  .external {
+    margin-top: 1.5rem;
+    display: flex;
+
+    li {
+      margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    svg {
+      width: 1.65rem;
+      height: 1.65rem;
+    }
+  }
+}

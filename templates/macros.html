@@ -1,0 +1,10 @@
+{%- macro theme() -%}
+  {%- set prefix = "theme-" -%}
+  {%- if current_path == "/" -%}
+    {{ prefix ~ "home" }}
+  {%- elif page and page.extra and page.extra.theme -%}
+    {{ prefix ~ page.extra.theme }}
+  {%- elif section.extra and section.extra.theme -%}
+    {{ prefix ~ section.extra.theme }}
+  {%- endif -%}
+{%- endmacro theme -%}

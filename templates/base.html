@@ -1,0 +1,21 @@
+{% import "macros.html" as macros %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "partials/head.html" %}
+  </head>
+  <body class="{{ macros::theme() }}">
+    {% include "partials/header.html" %}
+    
+    <main>
+      {% block content %}{% endblock content %}
+    </main>
+
+    <aside>
+      {% include "partials/nav.html" %}
+    </aside>
+
+    <script src="/assets/bundle.js"></script>
+    <!-- {% include "partials/debug.html" %} -->
+  </body>
+</html>
