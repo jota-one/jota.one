@@ -1,6 +1,6 @@
 +++
 title = "Libraries"
-description = "Useful side effects of building products"
+description = "Useful tools we built along the path"
 weight = 3
 +++
 
