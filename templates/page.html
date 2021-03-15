@@ -1,11 +1,13 @@
 {% extends "base.html" %}
 
+{% block title %}
+  {{ page.title | safe }}
+{% endblock title %}
+
+{% block sub_title %}
+  {{ page.description | safe }}
+{% endblock sub_title %}
+
 {% block content %}
-<div class="container">
-  <div id="title">
-    <h1>{{ page.title | safe }}</h1>
-    <h2>{{ page.description | safe }}</h2>
-  </div>
   {{ page.content | safe }}
-</div>
 {% endblock content %}

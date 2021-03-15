@@ -1,37 +1,63 @@
 #header {
   position: fixed;
   top: 0;
-  right: 0;
   left: 0;
-  height: var(--s-header-height);
+  right: 0;
 
-  .logo {
-    position: relative;
-    display: inline-block;
+  .theme-home & {
+    display: none;
+  }
 
-    .theme-home & {
-      display: none;
+  margin-left: -0.6rem;
+
+  @media (--s) {
+    margin-left: 0.125rem;
+  }
+
+  @media (--m) {
+    margin-left: 0.125rem;
+  }
+
+  @media (--l) {
+    margin-left: 0;
+  }
+
+  svg {
+    height: var(--s-header-height);
+
+    @media (--s) {
+      margin-left: -11px;
     }
 
-    #apostrophe path {
-      fill: var(--c-logo-background);
-      transition: fill 0.15s ease-in-out;
+    @media (--m) {
+      margin-left: -10px;
     }
 
-    &:hover {
-      #apostrophe path {
-        fill: var(--c-logo-background-hover);
-      }
+    @media (--l) {
+      margin-left: -15px;
     }
   }
 
-  j-logo {
-    position: absolute;
-    top: var(--s-layout-left-offset);
-    left: var(--s-layout-left-offset);
+  .bg,
+  .text {
+    transition: fill 0.2s linear;
+  }
 
-    path {
-      fill: white;
+  .bg {
+    fill: var(--c-logo-background);
+  }
+
+  .text {
+    fill: var(--c-logo-text);
+  }
+
+  &:hover {
+    .bg {
+      fill: var(--c-logo-background-hover);
+    }
+
+    .text {
+      fill: var(--c-logo-text-hover);
     }
   }
 }

@@ -11,6 +11,9 @@ default_language = "en"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
 
+# When set to "true", the generated HTML files are minified.
+minify_html = true
+
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
@@ -29,9 +32,9 @@ url = "https://www.npmjs.com/org/jota-one"
 icon = "npm"
 
 [[extra.social]]
-url = "#"
+url = ""
 icon = "linkedin"
 
 [[extra.social]]
-url = "#"
+url = ""
 icon = "twitter"

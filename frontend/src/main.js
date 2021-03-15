@@ -1,6 +1,7 @@
 import Styles from './Styles.svelte'
 import Icon from './components/Icon.svelte'
 import Logo from './components/Logo.svelte'
+import Nav from './components/Nav.svelte'
 
 const load = (component, targetSelector, props = []) => {
   const elements = document.querySelectorAll(targetSelector)  
@@ -12,11 +13,14 @@ const load = (component, targetSelector, props = []) => {
   elements.forEach(target => {
     new component({
       target,
-      props: props.reduce((obj, prop) => {
-        const value = target.getAttribute(prop)
-        obj[prop] = value
-        return obj
-      }, {})
+      props: {
+        target,
+        ...props.reduce((obj, prop) => {
+          const value = target.getAttribute(prop)
+          obj[prop] = value
+          return obj
+        }, {})
+      }
     })
   })
 }
@@ -24,3 +28,4 @@ const load = (component, targetSelector, props = []) => {
 new Styles({ target: document.body })
 load(Logo, 'j-logo')
 load(Icon, 'j-icon', ['name'])
+load(Nav, 'j-nav')

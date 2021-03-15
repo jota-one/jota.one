@@ -1,29 +1,105 @@
 #title {
-  padding-top: 3rem;
-  max-width: 50%;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+
+  body.init & {
+    opacity: 1;
+  }
   
+  @media (--m) {
+    max-width: 85%;
+  }
+
+  @media (--l) {
+    max-width: 70%;
+  }
+
+  @media (--xl) {
+    max-width: 55%;
+  }
+
+
   h1 {
     margin: 0;
     font-family: Oswald, Impact, sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 500;
     text-transform: uppercase;
     color: var(--c-secondary);
     fill: var(--c-secondary);
+
+    @media (--s) {
+      font-size: 1.2rem;
+    }
+
+    @media (--m) {
+      font-size: 1.4rem;
+    }
+
+    j-logo svg {
+      transform: scale(0.7) translateX(-0.65rem);
+
+      @media (--s) {
+        transform: scale(0.8) translateX(-0.35rem);
+      }
+
+      @media (--m) {
+        transform: scale(0.9);
+      }
+
+      @media (--l) {
+        transform: scale(1);
+      }
+    }
   }
 
   h2 {
-    margin: 0.5rem 0 2rem;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    margin: 0.5rem 0 1rem;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
     font-weight: 900;
     color: var(--c-primary);
     fill: var(--c-primary);
 
+    @media (--s) {
+      margin-bottom: 1.25rem;
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    @media (--m) {
+      margin-bottom: 1.5rem;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+
+    @media (--l) {
+      margin-bottom: 1.75rem;
+    }
+
+    @media (--xl) {
+      margin-bottom: 2rem;
+    }
+
     .theme-home & {
-      font-size: 4.5rem;
-      line-height: 3.75rem;
+      font-size: 2.7rem;
+      line-height: 1.85rem;
       text-transform: lowercase;
+
+      @media (--s) {
+        font-size: 3.5rem;
+        line-height: 2.75rem;
+      }
+  
+      @media (--m) {
+        font-size: 3.75rem;
+        line-height: 3rem;
+      }
+
+      @media (--l) {
+        font-size: 4.5rem;
+        line-height: 3.75rem;
+      }
     }
   }
 }

@@ -9,6 +9,7 @@ module.exports = {
     require('tailwindcss'),
     ...(!process.env.ROLLUP_WATCH ? [purgecss] : []),
     require('postcss-import')(),
+    require('postcss-custom-media')(),
     require('postcss-nested')()
   ],
 };

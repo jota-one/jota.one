@@ -1,0 +1,26 @@
+article {
+  margin-top: var(--s-header-height);
+  padding-top: 1.5rem;
+
+  @media (--m) {
+    padding-top: 2.5rem;
+  }
+
+  @media (--l) {
+    padding-top: 3rem;
+  }
+}
+
+#content {
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+
+  body.init & {
+    opacity: 1;
+  }
+}
+
+main {
+  flex: 1;
+}
