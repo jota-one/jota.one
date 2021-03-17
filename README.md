@@ -2,7 +2,7 @@
 
 ## Install
 ### Install Zola
-Follow the instruction on [getzola.org](https://www.getzola.org/documentation/getting-started/installation/)
+Follow instructions on [getzola.org](https://www.getzola.org/documentation/getting-started/installation/)
 
 ### Install the frontend (svelte + postcss + tailwind-ready)
 ```bash
