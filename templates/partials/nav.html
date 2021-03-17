@@ -1,32 +1,31 @@
 {% set section = get_section(path="_index.md") %}
-
 <j-nav>
   <nav id="navigation">
     <div class="container">
       <div class="width-ref">
         <ul class="internal">
-        {%- for page in section.pages -%}
-          <li>
-          {%- if page.path == current_path -%}
-            {{ page.title }}
-          {%- else -%}
-            <a href="{{page.path}}" class="link">
-              {{ page.title }}
-            </a>
-          {%- endif -%}
-          </li>
-        {%- endfor -%}
+          {%- for page in section.pages -%}
+            <li>
+              {%- if page.path == current_path -%}
+                {{ page.title }}
+              {%- else -%}
+                <a class="link" href="{{ page.path }}">
+                  {{ page.title }}
+                </a>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
         </ul>
         <ul class="external">
-        {%- for social in config.extra.social -%}
-          {%- if social.url -%}
-          <li>
-            <a href="{{social.url}}" target="_blank" class="link">
-              <j-icon name="{{social.icon}}"></j-icon>
-            </a>
-          </li>
-          {%- endif -%}
-        {%- endfor -%}
+          {%- for social in config.extra.social -%}
+            {%- if social.url -%}
+              <li>
+                <a aria-label="{{ social.icon }}" class="link" href="{{ social.url }}" rel="noopener" target="_blank" title="{{ social.icon }}">
+                  <j-icon name="{{ social.icon }}"></j-icon>
+                </a>
+              </li>
+            {%- endif -%}
+          {%- endfor -%}
         </ul>
       </div>
       <div class="spacer"></div>

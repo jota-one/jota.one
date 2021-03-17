@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block article_type %}
+product
+{% endblock article_type %}
+{% block title %}
+{{ page.title | safe }}
+{% endblock title %}
+{% block sub_title %}
+{{ page.description | safe }}
+{% endblock sub_title %}
+{% block aside %}
+<dl class="product-meta">
+  <dt>Target audience:</dt>
+  <dd>
+    {{ page.extra.product.audience }}
+  </dd>
+  <dt>License:</dt>
+  <dd>
+    {{ page.extra.product.license }}
+  </dd>
+  <dt>Website:</dt>
+  <dd>
+    <a aria-label="blabla" class="link arrow" href="{{ page.extra.product.website }}" rel="noopener" target="_blank"
+      title="blabla">
+      {{ page.extra.product.website }}
+    </a>
+  </dd>
+</dl>
+{% endblock aside %}
+{% block content %}
+{{ page.content | safe }}
+{% endblock content %}

@@ -1,82 +1,36 @@
 {% import "macros.html" as macros %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include "partials/head.html" %}
-  </head>
-  <body class="{{ macros::theme() }}">
-    {% include "partials/header.html" %}
-    
-    <article>
-      <div class="container">
-        <div id="title">
-          <h1>{% block title %}{% endblock title %}</h1>
-          <h2>{% block sub_title %}{% endblock sub_title %}</h2>
-        </div>
-        <div id="content">
-          {% include "partials/nav.html" %}
-          <main>
-            {% block content %}{% endblock content %}
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-          </main>
-        </div>
-      </div>
-    </article>
 
-    <script src="/assets/bundle.js"></script>
-    <!-- {% include "partials/debug.html" %} -->
-  </body>
+<head>
+  {% include "partials/head.html" %}
+</head>
+
+<body class="{{ macros::theme() }}">
+  {% include "partials/header.html" %}
+
+  <article class="{% block article_type %}{% endblock article_type %}">
+    <div class="container">
+      <div id="title">
+        <h1>{% block title %}{% endblock title %}</h1>
+        <h2>{% block sub_title %}{% endblock sub_title %}</h2>
+      </div>
+      <div id="content">
+        <div id="aside">
+          <div class="aside-wrapper">
+            {% block aside %}{% endblock aside %}
+          </div>
+          {% include "partials/nav.html" %}
+        </div>
+        <main>
+          {% block content %}{% endblock content %}
+        </main>
+      </div>
+    </div>
+  </article>
+
+  <script src="/assets/bundle.js"></script>
+  <!-- {% include "partials/debug.html" %} -->
+</body>
+
 </html>

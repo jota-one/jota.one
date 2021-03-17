@@ -1,6 +1,6 @@
 +++
 title = "Libraries"
-description = "Useful tools we built along the path"
+description = "Useful tools we built along the way"
 weight = 3
 +++
 

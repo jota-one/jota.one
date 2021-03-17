@@ -1,6 +1,6 @@
 article {
   margin-top: var(--s-header-height);
-  padding-top: 1.5rem;
+  padding: 1.5rem 0;
 
   @media (--m) {
     padding-top: 2.5rem;
@@ -14,6 +14,7 @@ article {
 #content {
   display: flex;
   opacity: 0;
+  padding-top: 2rem;
   transition: opacity 0.2s linear;
 
   body.init & {
@@ -21,6 +22,21 @@ article {
   }
 }
 
+#aside {
+  display: flex;
+  flex-direction: column;
+
+  j-nav {
+    display: block;
+  }
+}
+
 main {
   flex: 1;
+  column-count: 2;
+  column-gap: 2rem;
+
+  p:first-child {
+    margin-top: 0;
+  }
 }

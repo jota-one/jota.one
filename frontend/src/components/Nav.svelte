@@ -1,34 +1,37 @@
 <script>
-  import debounce from 'lodash/debounce'
-  import { onMount } from 'svelte';
+  import debounce from "lodash/debounce";
+  import { onMount } from "svelte";
 
-  export let target = null
+  export let target = null;
 
   const toggleFixedPosition = debounce(async function () {
-    const vph = window.innerHeight
-    const containerEl = target.parentElement
-    const contentEl = target.firstElementChild
-    const widthRefEl = target.querySelector('.width-ref')
+    const vph = window.innerHeight;
+    const containerEl = target.parentElement;
+    const contentEl = target.firstElementChild;
+    const asideHeight = document.querySelector("#aside .aside-wrapper")
+      .offsetHeight;
+    const widthRefEl = target.querySelector(".width-ref");
 
     if (widthRefEl) {
-      const widthRef = widthRefEl.getBoundingClientRect().width
-      target.style.width = `${Math.ceil(widthRef)}px`
+      const widthRef = widthRefEl.getBoundingClientRect().width;
+      target.style.width = `${Math.ceil(widthRef)}px`;
     }
 
-    const availableHeight = vph - containerEl.getBoundingClientRect().y
-    const requiredHeight = contentEl.getBoundingClientRect().height
+    const availableHeight =
+      vph - containerEl.getBoundingClientRect().y - asideHeight;
+    const requiredHeight = contentEl.getBoundingClientRect().height;
 
     if (availableHeight - requiredHeight > 0) {
-      contentEl.classList.add('fixed')
+      contentEl.classList.add("fixed");
     } else {
-      contentEl.classList.remove('fixed')
+      contentEl.classList.remove("fixed");
     }
-  }, 10)
+  }, 10);
 
   onMount(() => {
-    toggleFixedPosition()
-    document.body.classList.add('init')
-  })
+    toggleFixedPosition();
+    document.body.classList.add("init");
+  });
 </script>
 
 <svelte:window
