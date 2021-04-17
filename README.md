@@ -11,7 +11,7 @@ $ npm install
 ```
 
 ## Run the project
-You have to run two comands concurrently:
+You have to run two commands concurrently:
 ```bash
 # From the project root
 $ zola serve
@@ -30,7 +30,7 @@ $ cd frontend
 $ npm run build
 ```
 
-The build the website:
+To build the website:
 ```bash
 # from the project root 
 $ zola build

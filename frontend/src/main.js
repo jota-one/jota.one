@@ -4,8 +4,8 @@ import Logo from './components/Logo.svelte'
 import Nav from './components/Nav.svelte'
 
 const load = (component, targetSelector, props = []) => {
-  const elements = document.querySelectorAll(targetSelector)  
-  
+  const elements = document.querySelectorAll(targetSelector)
+
   if (!elements) {
     return
   }
@@ -16,8 +16,7 @@ const load = (component, targetSelector, props = []) => {
       props: {
         target,
         ...props.reduce((obj, prop) => {
-          const value = target.getAttribute(prop)
-          obj[prop] = value
+          obj[prop] = target.getAttribute(prop)
           return obj
         }, {})
       }
