@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "cd frontend && npm install && npm run build && cd .. && zola build"
+command = "cd frontend && npm ci && npm run build && cd .. && zola build"
 
 [build.environment]
 ZOLA_VERSION = "0.13.0"
