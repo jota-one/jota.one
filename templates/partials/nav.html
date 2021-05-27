@@ -3,7 +3,7 @@
   <nav id="navigation">
     <div class="container">
       <div class="width-ref">
-        <ul class="internal">
+        <!-- <ul class="internal">
           {%- for page in section.pages -%}
             <li>
               {%- if page.path == current_path -%}
@@ -15,16 +15,17 @@
               {%- endif -%}
             </li>
           {%- endfor -%}
-        </ul>
+        </ul> -->
         <ul class="external">
           {%- for social in config.extra.social -%}
-            {%- if social.url -%}
-              <li>
-                <a aria-label="{{ social.icon }}" class="link" href="{{ social.url }}" rel="noopener" target="_blank" title="{{ social.icon }}">
-                  <j-icon name="{{ social.icon }}"></j-icon>
-                </a>
-              </li>
-            {%- endif -%}
+          {%- if social.url -%}
+          <li>
+            <a aria-label="{{ social.icon }}" class="link" href="{{ social.url }}" rel="noopener" target="_blank"
+              title="{{ social.icon }}">
+              <j-icon name="{{ social.icon }}"></j-icon>
+            </a>
+          </li>
+          {%- endif -%}
           {%- endfor -%}
         </ul>
       </div>

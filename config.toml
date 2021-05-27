@@ -31,10 +31,10 @@ icon = "github"
 url = "https://www.npmjs.com/org/jota-one"
 icon = "npm"
 
-[[extra.social]]
-url = "https://linkedin.com/"
-icon = "linkedin"
+# [[extra.social]]
+# url = "https://linkedin.com/"
+# icon = "linkedin"
 
-[[extra.social]]
-url = "https://twitter.com/"
-icon = "twitter"
+# [[extra.social]]
+# url = "https://twitter.com/"
+# icon = "twitter"
