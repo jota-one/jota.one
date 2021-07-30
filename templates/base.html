@@ -16,6 +16,11 @@
       <span></span>
       <span></span>
     </button>
+    <div class="tooltip">
+      You might want
+      <br>
+      to click here...
+    </div>
   </div>
   <nav>
     {% include "partials/nav.html" %}
@@ -45,6 +50,19 @@
   </footer>
 
   <script src="/assets/bundle.js"></script>
+  <script>
+    setTimeout(function() {
+      if (!window.location.pathname === '/') {
+        return
+      }
+      
+      if (document.body.classList.contains('navigate')) {
+        return
+      }
+      
+      document.querySelector('.tooltip').classList.add('visible')
+    }, 3000)
+  </script>
 </body>
 
 </html>
