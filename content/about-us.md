@@ -23,7 +23,7 @@ And we don't like talking about ourselves so we'll stop there for this part...
 
 {% block() %}
 ## What <small class="block opacity-50">do we do?</small>
-We build web products (as you've probably read on the [homepage](@/_index.md))
+We build web products (as you've probably read on the [homepage](/))
 and we'll tell you [how](#how) and [why](#why) in the next sections...
 
 Stay tuned 🥁
