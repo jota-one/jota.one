@@ -1,0 +1,14 @@
+{%- import "macros.html" as macros -%}
+{%- set products = load_data(path="data/products.json") -%}
+{%- set metas = products[id] -%}
+
+{#
+  We should embed shortcodes (product_meta() inside block()) here
+  but zola does not allow it currently so duplicating block()
+  template here...
+#}
+<section class="product{% if isFull %} full{% endif %}">
+  <h2 id="{{ id }}">{{ id }}</h2>
+  {{ macros::product_meta(metas=metas) }}
+  {{ body | markdown | safe }}
+</section>

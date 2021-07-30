@@ -4,8 +4,47 @@ description = "Useful tools we built along the way"
 weight = 3
 +++
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+{% product(id="hateoas-parser") %}
+#### Javascript HATEOAS parser
 
-Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+You *must* use [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS) if you're building
+a RESTful API; at least that's our opinion...
 
-Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
+And because HATEOAS is a pain in the *** despite its greatness, we've built this
+client-side vanilla JavaScript library that you can integrate in your
+(Vue.js, React, Svelte, ...) frontend app!
+
+It won its spurs in production on many of our projects!
+{% end %}
+
+{% product(id="http-client") %}
+#### Axios-based Javascript HTTP client with HATEOAS support
+
+This library is basically a wrapper around [Axios](https://axios-http.com/)
+with some sugars (request caching, browser `GET` cache killer at the Promise
+level) and is particularly well suited to HATEOAS backend APIs thanks to the
+integration of the [hateoas-parser](#hateoas-parser) library.
+{% end %}
+
+{% product(id="vue-cli-plugin-aem-clientlib") %}
+#### Build a Vue app as an AEM (crx) package
+
+Configurable `vue-cli` plugin to ease the deployment of a
+*[Vue.js](https://vuejs.org/)* app in
+*[Adobe Experience Manager (AEM)](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)* CMS.
+{% end %}
+
+{% product(id="i36n") %}
+#### Translation manager twice simpler ~~and twice better~~ than [vue i18n](https://vue-i18n.intlify.dev/) :muscle:
+
+Vue 2 and 3 compatible library for managing translations with a single (killer)
+feature:
+
+*:tada: Switch between translation values
+<br>
+and keys in the browser :champagne:*
+
+![i36n in action!](/img/product/i36n.gif)
+
+Especially useful for content editors indeed...
+{% end %}

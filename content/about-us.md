@@ -1,14 +1,54 @@
 +++
 title = "About us"
-description = "La pognon ça reste à la pogne!"
+description = "We don't really like to talk about ourselves, but we'll try... "
 weight = 4
 
 [extra]
 theme = "invert"
 +++
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+{% block() %}
+## Who <small class="block opacity-50">are we?</small>
+We are 2 seasoned web software developers from Switzerland.
 
-Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+We've been working for 20 years in many different companies
+(bank, insurance, media, education, health, government).
 
-Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
+And we don't like talking about ourselves so we'll stop there for this part...
+:flushed:
+
+<j-author img="/img/author/jorinho.jpg" big=true name="Joriñho" url="/about-us/jorinho"></j-author>
+<j-author img="/img/author/tadai.jpg" big=true name="Tadaï" url="/about-us/tadai"></j-author>
+{% end %}
+
+{% block() %}
+## What <small class="block opacity-50">do we do?</small>
+We build web products (as you've probably read on the [homepage](@/_index.md))
+and we'll tell you [how](#how) and [why](#why) in the next sections...
+
+Stay tuned 🥁
+
+Ah, did we already tell you we hate talking about ourselves?
+Well, that's the case, really.
+{% end %}
+
+{% block() %}
+## How <small class="block opacity-50">do we do that?</small>
+We usually sit in front of the computer and type on the keyboard... obviously...
+{% end %}
+
+{% block() %}&nbsp;{% end %}
+
+{% block() %}
+## Why <small class="block opacity-50">do we do all this?</small>
+Considering the importance of that question and the brevity of the previous
+parts, we thought writing a little AI to ask us relevant questions
+would be a nice way to extract some of our deeper hidden thoughts.
+
+Because we hate talking about ourselves (not sure we told you about it already
+:thinking:...)
+{% end %}
+
+{% block() %}&nbsp;{% end %}
+
+{{ chat(isFull=true, id="about-us-ai") }}

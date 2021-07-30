@@ -1,6 +1,6 @@
 {%- macro theme() -%}
   {%- set prefix = "theme-" -%}
-  {%- if current_path == "/" -%}
+  {%- if current_path and current_path == "/" -%}
     {{ prefix ~ "home" }}
   {%- elif page and page.extra and page.extra.theme -%}
     {{ prefix ~ page.extra.theme }}
@@ -8,3 +8,84 @@
     {{ prefix ~ section.extra.theme }}
   {%- endif -%}
 {%- endmacro theme -%}
+
+
+{% macro block(pos) %}
+  <section class="{{ pos }}">
+    {%- if body != "&nbsp;" -%}
+      {{ body | markdown | safe }}
+    {%- endif -%}
+  </section>
+{% endmacro %}
+
+{% macro terminal(session) %}
+  {% set data = load_data(path=session) -%}
+  <j-terminal steps="{{ data.steps | json_encode() }}" />
+{% endmacro terminal %}
+
+
+{% macro product_meta(metas) %}
+  <dl class="product-meta">
+    {%- if metas.license -%}
+      <div>
+        <dt>License</dt>
+        <dd>Free / Open source</dd>
+      </div>
+    {%- endif -%}
+    {%- if metas.audience -%}
+      <div>
+        <dt>Target audience</dt>
+        <dd>{{ metas.audience }}</dd>
+      </div>
+    {%- endif -%}
+    {%- if metas.techs -%}
+      <div>
+        <dt>Technologies</dt>
+        <dd class="icons">
+          {%- for tech in metas.techs -%}
+            <j-icon
+              name="{{ tech | lower | replace(from=".", to="") }}"
+              aria-label="{{ tech }}"
+              title="{{ tech }}"
+            ></j-icon>
+          {%- endfor -%}
+        </dd>
+      </div>
+    {%- endif -%}
+    {%- if metas.github or metas.npm -%}
+      <div>
+        <dt>Install</dt>
+        <dd class="icons">
+          {%- if metas.github -%}
+            <a href="{{ metas.github }}" target="_blank">
+              <j-icon name="github" aria-label="github" title="github"></j-icon>
+            </a>
+          {%- endif -%}
+          {%- if metas.npm -%}
+          <a class="link" href="{{ metas.npm }}" target="_blank">
+            <j-icon name="npm" aria-label="npm" title="npm"></j-icon>
+          </a>
+          {%- endif -%}
+        </dd>
+      </div>
+    {%- endif -%}
+    {%- if metas.website -%}
+      <div>
+        {% set website = metas.website | replace(from="https://", to="") %}
+        <dt>Product website</dt>
+        <dd>
+          <a
+              aria-label="product website: {{ website }}"
+              class="link arrow"
+              href="{{ metas.website }}"
+              rel="noopener"
+              target="_blank"
+              title="product website: {{ website }}"
+            >
+              {{ website }}
+          </a>
+        </dd>
+      </div>
+    {%- endif -%}
+  </dl>
+{% endmacro terminal %}

@@ -1,0 +1,16 @@
+{% set chat = load_data(path="data/chat/" ~ id ~ ".json") -%}
+
+<section class="full two-cols center-h">
+  <ul class="chat">
+    {%- for item in chat.discussion -%}
+      <li {% if item.isSender %}class="sender"{% endif %}>
+        <div class="avatar" title="{{ chat.users[item.user].name }}">
+          {{ chat.users[item.user].avatar | markdown | safe }}
+        </div>
+        <div class="message">
+          {{ item.msg | markdown | safe }}
+        </div>
+      </li>
+    {%- endfor -%}
+  </ul>
+</section>

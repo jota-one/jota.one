@@ -1,46 +1,27 @@
-#header {
-  position: fixed;
+header {
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
+  z-index: 1;
+  pointer-events: none;
 
   .theme-home & {
     display: none;
   }
 
-  margin-left: -0.6rem;
-
-  @media (--s) {
-    margin-left: 0.125rem;
-  }
-
-  @media (--m) {
-    margin-left: 0.125rem;
-  }
-
-  @media (--l) {
-    margin-left: 0;
+  a {
+    display: inline-block;
+    height: 100%;
+    pointer-events: all;
   }
 
   svg {
-    height: var(--s-header-height);
-
-    @media (--s) {
-      margin-left: -11px;
-    }
-
-    @media (--m) {
-      margin-left: -10px;
-    }
-
-    @media (--l) {
-      margin-left: -15px;
-    }
+    height: 100%;
+    width: auto;
   }
 
   .bg,
   .text {
-    transition: fill 0.2s linear;
+    transition: fill 0.25s linear;
   }
 
   .bg {
@@ -51,7 +32,7 @@
     fill: var(--c-logo-text);
   }
 
-  &:hover {
+  .logo:hover {
     .bg {
       fill: var(--c-logo-background-hover);
     }

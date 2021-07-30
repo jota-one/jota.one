@@ -3,6 +3,7 @@ title = "Meat"
 description = "A visual project reporting and tracking web app"
 weight = 2
 template = "product.html"
+draft = true
 
 [extra.product]
 audience = "Small to big businesses"

@@ -1,7 +1,9 @@
 import Styles from './Styles.svelte'
+import Author from './components/Author.svelte'
+import CallToAction from './components/CallToAction.svelte'
 import Icon from './components/Icon.svelte'
 import Logo from './components/Logo.svelte'
-import Nav from './components/Nav.svelte'
+import Terminal from './components/Terminal.svelte'
 
 const load = (component, targetSelector, props = []) => {
   const elements = document.querySelectorAll(targetSelector)
@@ -14,7 +16,6 @@ const load = (component, targetSelector, props = []) => {
     new component({
       target,
       props: {
-        target,
         ...props.reduce((obj, prop) => {
           obj[prop] = target.getAttribute(prop)
           return obj
@@ -25,6 +26,8 @@ const load = (component, targetSelector, props = []) => {
 }
 
 new Styles({ target: document.body })
+load(Author, 'j-author', ['big', 'img', 'name', 'url'])
+load(CallToAction, 'j-cta', ['label', 'target', 'url'])
+load(Icon, 'j-icon', ['color', 'name', 'size'])
 load(Logo, 'j-logo')
-load(Icon, 'j-icon', ['name'])
-load(Nav, 'j-nav')
+load(Terminal, 'j-terminal', ['steps'])

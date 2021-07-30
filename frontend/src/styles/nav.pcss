@@ -1,46 +1,30 @@
-#navigation {
-  padding-bottom: 1.25rem;
-  font-size: 1.2rem;
-  line-height: 1.1;
-  font-weight: 900;
-  color: var(--c-primary);
+nav {
+  width: var(--s-nav-handler-width);
+  padding: 0 1rem;
+  opacity: 0;
+  transform-origin: left;
+  transition: all 0.25s ease;
+  pointer-events: none;
 
-  @media (--s) {
-    font-size: 1.35rem;
+  body.navigate & {
+    opacity: 1;
+    transition: all 0.75s ease;
+    pointer-events: all;
   }
 
-  @media (--m) {
-    font-size: 1.5rem;
-  }
-
-  &.fixed {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-  &:not(.fixed) {
-    .container {
-      padding-left: 0;
-      padding-top: 1rem;
-    }
-  }
-
-  .container {
-    display: flex;
-  }
-
-  .width-ref {
-    padding-right: 2rem;
-    white-space: nowrap;
-  }
-
-  .internal,
-  .external {
+  ul {
+    position: sticky;
+    top: var(--s-nav-top);
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+
+  li {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    font-weight: 900;
+    color: var(--c-primary);
   }
 
   .link {
@@ -50,24 +34,6 @@
 
     &:hover {
       color: var(--c-primary);
-    }
-  }
-
-  .external {
-    margin-top: 1.5rem;
-    display: flex;
-
-    li {
-      margin-right: 1rem;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-
-    svg {
-      width: 1.65rem;
-      height: 1.65rem;
     }
   }
 }

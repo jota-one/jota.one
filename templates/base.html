@@ -7,30 +7,44 @@
 </head>
 
 <body class="{{ macros::theme() }}">
-  {% include "partials/header.html" %}
-
-  <article class="{% block article_type %}{% endblock article_type %}">
-    <div class="container">
-      <div id="title">
-        <h1>{% block title %}{% endblock title %}</h1>
-        <h2>{% block sub_title %}{% endblock sub_title %}</h2>
-      </div>
-      <div id="content">
-        <div id="aside">
-          <div class="aside-wrapper">
-            {% block aside %}{% endblock aside %}
-          </div>
-          {% include "partials/nav.html" %}
-        </div>
-        <main>
-          {% block content %}{% endblock content %}
-        </main>
-      </div>
-    </div>
+  <header>
+    {% include "partials/header.html" %}
+  </header>
+  <div id="nav-handler" onclick="body.classList.toggle('navigate')">
+    <button>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <nav>
+    {% include "partials/nav.html" %}
+  </nav>
+  <article>
+    <main>
+      <section class="top {% if current_path and current_path == "/" %}full{% else %}left{% endif %}">
+        {% block product_logo %}{% endblock product_logo %}
+        <h1>
+          <span>
+            {% block title %}{% endblock title %}
+          </span>
+          {% block sub_title %}{% endblock sub_title %}
+        </h1>
+        {% block meta %}{% endblock meta %}
+      </section>
+      {%- if current_path and current_path != "/" -%}
+      <section id="hero" class="top right">
+        {% block hero %}{% endblock hero %}
+      </section>
+      {%- endif -%}
+      {% block content %}{% endblock content %}
+    </main>
   </article>
+  <footer>
+    {% include "partials/footer.html" %}
+  </footer>
 
   <script src="/assets/bundle.js"></script>
-  <!-- {% include "partials/debug.html" %} -->
 </body>
 
 </html>
