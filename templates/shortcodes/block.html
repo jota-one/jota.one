@@ -1,39 +1,36 @@
-{%- set cssClasses = [] -%}
-
-{%- if isFull or title -%}
-  {%- set cssClasses = cssClasses | concat(with="full") -%}
-{% endif %}
-
-{% if title or twoCols %}
-  {%- set cssClasses = cssClasses | concat(with="two-cols") -%}
-{% endif %}
+{%- set cssSection = [] -%}
+{%- set cssContainer = [] -%}
 
 {% if centerH %}
-  {%- set cssClasses = cssClasses | concat(with="center-h") %}
+  {%- set cssContainer = cssContainer | concat(with="center-h") %}
 {% endif %}
 
 {% if centerV %}
-  {%- set cssClasses = cssClasses | concat(with="center-v") %}
+  {%- set cssContainer = cssContainer | concat(with="center-v") %}
 {% endif %}
 
-{%- set cssClassesStr = cssClasses | join(sep=" ") -%}
+{%- set cssSectionStr = cssSection | join(sep=" ") -%}
+{%- set cssContainerStr = cssContainer | join(sep=" ") -%}
 
-<section
-  class="{{ cssClassesStr }}"
-  {% if padding %} style="padding:{{padding}}rem"{% endif %}
->
-  {%- if body != "&nbsp;" -%}
-    {%- if title -%}
-      <h2 id="{{ title | slugify }}">{{ title | markdown | safe }}</h2>
+<section class="{{ cssSectionStr }}">
+  <div class="container {{ cssContainerStr }}">
+    {%- if body != "&nbsp;" -%}
+      {%- if title -%}
+        <h2 id="{{ title | slugify }}">
+          {{ title | markdown | safe }}
+        </h2>
+      {%- endif -%}
+      {%- if not isFull -%}
+        <div class="row">
+      {%- endif -%}
+      {%- for col in body | split(pat="---") -%}
+        <div class="col">
+          {{ col | markdown | safe }}
+        </div>
+      {%- endfor -%}
+      {%- if not isFull -%}
+        </div>
+      {%- endif -%}
     {%- endif -%}
-    {%- if title or twoCols -%}
-      <div class="row">
-        {%- for col in body | split(pat="---") -%}
-          <div class="col">{{ col | markdown | safe }}</div>
-        {%- endfor -%}
-      </div>
-    {%- else -%}
-      {{ body | markdown | safe }}
-    {%- endif -%}
-  {%- endif -%}
+  </div>
 </section>

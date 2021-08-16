@@ -1,12 +1,14 @@
-<ul>
-  {%- for social in config.extra.social -%}
-  {%- if social.url -%}
-  <li>
-    <a aria-label="{{ social.icon }}" class="link" href="{{ social.url }}" rel="noopener" target="_blank"
-      title="{{ social.icon }}">
-      <j-icon name="{{ social.icon }}"></j-icon>
-    </a>
-  </li>
-  {%- endif -%}
-  {%- endfor -%}
-</ul>
+<div class="container">
+  <ul>
+    {%- for social in config.extra.social -%}
+    {%- if social.url -%}
+    <li>
+      <a aria-label="{{ social.icon }}" class="link" href="{{ social.url }}" rel="noopener" target="_blank"
+        title="{{ social.icon }}">
+        <j-icon name="{{ social.icon }}"></j-icon>
+      </a>
+    </li>
+    {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</div>

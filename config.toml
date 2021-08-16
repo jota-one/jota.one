@@ -24,10 +24,10 @@ icon = "github"
 url = "https://www.npmjs.com/org/jota-one"
 icon = "npm"
 
-[[extra.social]]
-url = "https://linkedin.com/jota-one"
-icon = "linkedin"
+# [[extra.social]]
+# url = "https://linkedin.com/jota-one"
+# icon = "linkedin"
 
-[[extra.social]]
-url = "https://twitter.com/jota-one"
-icon = "twitter"
+# [[extra.social]]
+# url = "https://twitter.com/jota-one"
+# icon = "twitter"

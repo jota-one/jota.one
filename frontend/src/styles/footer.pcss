@@ -1,11 +1,19 @@
 footer {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  padding: 3.5rem;
+
+  @media (--m) {
+    padding-left: 4rem;
+  }
+
+  @media (--xl) {
+    padding-left: 6.25rem;
+  }
 
   ul {
     list-style: none;
-    padding: 0 0 0 1rem;
+    padding: 0;
     margin: 0;
     display: flex;
 

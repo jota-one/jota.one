@@ -1,10 +1,11 @@
 <script>
   export let label
   export let target
+  export let transparent = false
   export let url
 </script>
 
-<div class="cta">
+<div class="cta" class:transparent>
   <a class="link fake" href="{url}" target="{target}">
     <span>{label}</span>
   </a>
@@ -15,11 +16,15 @@
   .cta {
     position: relative;
 
+    &.transparent .fake {
+      background: transparent;
+    }
+
     a {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 1rem 1.25rem;
+      padding: 0.75rem 1.25rem;
       border-radius: 0.5rem;
     }
 

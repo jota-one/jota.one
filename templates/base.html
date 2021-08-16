@@ -10,59 +10,38 @@
   <header>
     {% include "partials/header.html" %}
   </header>
-  <div id="nav-handler" onclick="body.classList.toggle('navigate')">
-    <button>
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <div class="tooltip">
-      You might want
-      <br>
-      to click here...
-    </div>
-  </div>
   <nav>
     {% include "partials/nav.html" %}
   </nav>
-  <article>
-    <main>
-      <section class="top {% if current_path and current_path == "/" %}full{% else %}left{% endif %}">
-        {% block product_logo %}{% endblock product_logo %}
-        <h1>
-          <span>
-            {% block title %}{% endblock title %}
-          </span>
-          {% block sub_title %}{% endblock sub_title %}
-        </h1>
-        {% block meta %}{% endblock meta %}
+  <main>
+    <article>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              {% block product_logo %}{% endblock product_logo %}
+              <h1>
+                <span>
+                  {% block title %}{% endblock title %}
+                </span>
+                {% block sub_title %}{% endblock sub_title %}
+              </h1>
+              {% block meta %}{% endblock meta %}
+            </div>
+            {%- if current_path and current_path != "/" -%}
+              <div id="hero" class="col">{% block hero %}{% endblock hero %}</div>
+            {%- endif -%}
+          </div>
+        </div>
       </section>
-      {%- if current_path and current_path != "/" -%}
-      <section id="hero" class="top right">
-        {% block hero %}{% endblock hero %}
-      </section>
-      {%- endif -%}
       {% block content %}{% endblock content %}
-    </main>
-  </article>
+    </article>
+  </main>
   <footer>
     {% include "partials/footer.html" %}
   </footer>
 
   <script src="/assets/bundle.js"></script>
-  <script>
-    setTimeout(function() {
-      if (!window.location.pathname === '/') {
-        return
-      }
-      
-      if (document.body.classList.contains('navigate')) {
-        return
-      }
-      
-      document.querySelector('.tooltip').classList.add('visible')
-    }, 3000)
-  </script>
 </body>
 
 </html>

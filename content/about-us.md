@@ -2,9 +2,6 @@
 title = "About us"
 description = "We don't really like to talk about ourselves, but we'll try... "
 weight = 4
-
-[extra]
-theme = "invert"
 +++
 
 {% block() %}
@@ -19,9 +16,9 @@ And we don't like talking about ourselves so we'll stop there for this part...
 
 <j-author img="/img/author/jorinho.jpg" big=true name="Joriñho" url="/about-us/jorinho"></j-author>
 <j-author img="/img/author/tadai.jpg" big=true name="Tadaï" url="/about-us/tadai"></j-author>
-{% end %}
 
-{% block() %}
+---
+
 ## What <small class="block opacity-50">do we do?</small>
 We build web products (as you've probably read on the [homepage](/))
 and we'll tell you [how](#how) and [why](#why) in the next sections...
@@ -37,8 +34,6 @@ Well, that's the case, really.
 We usually sit in front of the computer and type on the keyboard... obviously...
 {% end %}
 
-{% block() %}&nbsp;{% end %}
-
 {% block() %}
 ## Why <small class="block opacity-50">do we do all this?</small>
 Considering the importance of that question and the brevity of the previous
@@ -48,7 +43,5 @@ would be a nice way to extract some of our deeper hidden thoughts.
 Because we hate talking about ourselves (not sure we told you about it already
 :thinking:...)
 {% end %}
-
-{% block() %}&nbsp;{% end %}
 
 {{ chat(isFull=true, id="about-us-ai") }}

@@ -1,0 +1,23 @@
+{
+    "bezulu": {
+        "url": "https://bezu.lu",
+        "title": "Be Zulu! Podcast",
+        "subTitle": "Web audio player for podcast",
+        "description": "Because sometimes you need to reach your audience in a single click on a smartphone...\n<small class=\"block opacity-50\">Configure your podcast (url, title, etc.), gather your audio files and publish/update your RSS feed and a web app at once! </small>",
+        "about": "*Be Zulu!* is a crew of swiss electronic music DJ's.<br>They publish they mixes on iTunes via their *Be Zulu! Podcast* since 2006.",
+        "img": {
+            "src": "/img/project/bezulu.png",
+            "srcset": "/img/project/bezulu@2x.png 2x"
+        }
+    },
+    "ferencfarkas": {
+        "url": "https://ferencfarkas.org",
+        "title": "Ferenc Farkas official website",
+        "subTitle": "",
+        "description": "",
+        "img": {
+            "src": "/img/project/ferencfarkas.png",
+            "srcset": "/img/project/ferencfarkas@2x.png 2x"
+        }
+    }
+}

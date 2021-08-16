@@ -37,29 +37,23 @@ html {
 body {
   position: relative;
   min-width: 320px;
-  max-width: var(--s-content-max-width);
   min-height: 100vh;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 2.5rem 1fr 2rem;
-  grid-template-rows: 5.75rem auto 7.5rem;
-  grid-template-areas:
-    "handler header ."
-    "handler main   ."
-    "handler footer .";
+  display: flex;
+  flex-direction: column;
   font-family: 'Inter', -system-ui,system-ui,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--c-background);
-  overflow-x: hidden;
-
-  @media (--m) {
-    grid-template-columns: 3rem 1fr 3rem;
-  }
 }
 
-#nav-handler { grid-area: handler }
-header { grid-area: header }
-nav { grid-area: main }
-article { grid-area: main }
-footer { grid-area: footer }
+main {
+  flex: 1;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--s-content-max-width);
+}

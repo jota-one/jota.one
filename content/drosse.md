@@ -30,9 +30,9 @@ terminal = "data/terminal/drosse_serve.json"
 {% block() %}
 *Drosse* is a web server written in javascript that focuses on
 mocking APIs in frontend projects.
-{% end %}
 
-{% block() %}
+---
+
 Unlike other similar tools that only serve static
 content, Drosse can serve [dynamic content](https://drosse.dev#dynamic-mocks)
 and ships with an internal [in-memory database](https://drosse.dev#data-persistence),
@@ -57,9 +57,15 @@ JSON file in a tree structure.
 <small class="block opacity-50">
 Inherit plugin configs from parent route, or overwrite them, it's that simple!
 </small>
-{% end %}
 
-{% block() %}
+### <j-icon name="caca" size="32" color="var(--c-secondary)"></j-icon> Some other feature
+Bla
+<small class="block opacity-50">
+...
+</small>
+
+---
+
 ### <j-icon name="paperclip" size="32" color="var(--c-secondary)"></j-icon> Tight to your project
 Your mocks come with you and so do your mock-server.
 <small class="block opacity-50">
@@ -71,17 +77,17 @@ Need session management, jwt auth or consume a 3<sup>rd</sup> party API at runti
 <small class="block opacity-50">
 Drosse is compatible with express middlewares. Use its built-in ones or write your own(s)!
 </small>
-{% end %}
 
-{% block(isFull=true, centerH=true) %}
 ### &nbsp;:nerd_face: &nbsp;Hackers compatible
 Extensible REPL CLI, scraping mode, chainable proxying...
 <small class="block opacity-50">
 Wanna go hard on tweaking? Be our guest!
 </small>
+{% end %}
 
+{% block(isFull=true, centerH=true) %}
+<br><br>
 <j-cta url="https://drosse.dev" label="Discover all features" target="_blank"></j-cta>
-
 {% end %}
 
 {% block(title="Use cases / Testimonials") %}

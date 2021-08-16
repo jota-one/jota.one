@@ -10,9 +10,9 @@ weight = 3
 You *must* use [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS) if you're building
 a RESTful API; at least that's our opinion...
 
-And because HATEOAS is a pain in the *** despite its greatness, we've built this
-client-side vanilla JavaScript library that you can integrate in your
-(Vue.js, React, Svelte, ...) frontend app!
+And because HATEOAS is tricky to implement despite its greatness,
+we've built this client-side vanilla JavaScript library that you can integrate
+in your (Vue.js, React, Svelte, ...) frontend app!
 
 It won its spurs in production on many of our projects!
 {% end %}
@@ -40,9 +40,7 @@ Configurable `vue-cli` plugin to ease the deployment of a
 Vue 2 and 3 compatible library for managing translations with a single (killer)
 feature:
 
-*:tada: Switch between translation values
-<br>
-and keys in the browser :champagne:*
+*:tada: Switch between translation values and keys in the browser :champagne:*
 
 ![i36n in action!](/img/product/i36n.gif)
 
