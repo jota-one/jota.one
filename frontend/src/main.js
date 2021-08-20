@@ -26,7 +26,7 @@ const load = (component, targetSelector, props = []) => {
 }
 
 new Styles({ target: document.body })
-load(Author, 'j-author', ['big', 'img', 'name', 'url'])
+load(Author, 'j-author', ['big', 'img', 'name', 'pageMode', 'url'])
 load(CallToAction, 'j-cta', ['label', 'target', 'transparent', 'url'])
 load(Icon, 'j-icon', ['color', 'name', 'size'])
 load(Logo, 'j-logo')

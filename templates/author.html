@@ -1,0 +1,19 @@
+{% extends "page.html" %}
+
+{% block title %}
+  {{ page.title | markdown | safe }}
+{% endblock title %}
+
+{% block sub_title %}
+  {{ page.description | markdown | safe }}
+{% endblock sub_title %}
+
+{% block hero %}
+  <j-author
+    img="{{ page.extra.author.img }}"
+    pageMode=true
+    name="{{ page.extra.author.name }}"
+  ></j-author>
+{% endblock hero %}
+
+{% block bodyClass %}author{% endblock bodyClass %}

@@ -51,19 +51,6 @@ Drosse is as light as a nodejs process can be.
 Install it as an `npm` dev dependency to your project or gloablly (or run it via docker...)
 </small>
 
-### <j-icon name="graph" size="32" color="var(--c-secondary)"></j-icon> Cascading config
-Route definitions and plugins (throttle, proxy, etc.) are written in a single
-JSON file in a tree structure.
-<small class="block opacity-50">
-Inherit plugin configs from parent route, or overwrite them, it's that simple!
-</small>
-
-### <j-icon name="caca" size="32" color="var(--c-secondary)"></j-icon> Some other feature
-Bla
-<small class="block opacity-50">
-...
-</small>
-
 ---
 
 ### <j-icon name="paperclip" size="32" color="var(--c-secondary)"></j-icon> Tight to your project
@@ -71,12 +58,34 @@ Your mocks come with you and so do your mock-server.
 <small class="block opacity-50">
 You can launch your backend in the same `npm` command as your frontend app.
 </small>
+{% end %}
+
+{% block() %}
+### <j-icon name="graph" size="32" color="var(--c-secondary)"></j-icon> Cascading config
+Route definitions and plugins (throttle, proxy, etc.) are written in a single
+JSON file in a tree structure.
+<small class="block opacity-50">
+Inherit plugin configs from parent route, or overwrite them, it's that simple!
+</small>
+
+---
 
 ### <j-icon name="extension" size="32" color="var(--c-secondary)"></j-icon> Fully extensible
 Need session management, jwt auth or consume a 3<sup>rd</sup> party API at runtime?
 <small class="block opacity-50">
 Drosse is compatible with express middlewares. Use its built-in ones or write your own(s)!
 </small>
+{% end %}
+
+{% block() %}
+### <j-icon name="database" size="32" color="var(--c-secondary)"></j-icon> Data persistence
+Drosse ships with a fully integrated document database accessible through a super
+easy-to-use API.
+<small class="block opacity-50">
+for advanced querying you can always use the built-in mongo-like syntax.
+</small>
+
+---
 
 ### &nbsp;:nerd_face: &nbsp;Hackers compatible
 Extensible REPL CLI, scraping mode, chainable proxying...

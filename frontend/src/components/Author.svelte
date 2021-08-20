@@ -1,19 +1,26 @@
 <script>
   export let big = false
+  export let pageMode = false
   export let img
   export let name
   export let url
 </script>
 
-<a class="author" class:big href="{ url }" title="{ name }">
-  <img src="{ img }" alt="{ name }">
-  {#if name}
-    <span>{ name }</span>
-  {/if}
-</a>
+{#if pageMode}
+  <div class="author page-mode">
+    <img src="{ img }" alt="{ name }">
+  </div>
+{:else}
+  <a class="author" class:big href="{ url }" title="{ name }">
+    <img src="{ img }" alt="{ name }">
+    {#if name}
+      <span>{ name }</span>
+    {/if}
+  </a>
+{/if}
 
 <style lang="postcss">
-  a {
+  .author {
     display: inline-flex;
     align-items: center;
     padding: 0.75%;
@@ -24,8 +31,10 @@
     border-radius: 999px;
     background: rgba(0,0,0, 0.1);
 
-    &.big {
+    &.big,
+    &.page-mode {
       flex-direction: column;
+      margin: 0 2rem;
       font-size: 1rem;
       font-weight: 900;
       padding: 1rem 0.5rem;
@@ -39,6 +48,15 @@
 
       span {
         padding-top: 0.5rem;
+      }
+    }
+
+    &.page-mode {
+      margin: 0.5rem 0;
+
+      img {
+        width: 7.5rem;
+        height: 7.5rem;
       }
     }
   }

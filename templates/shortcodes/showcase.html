@@ -1,10 +1,10 @@
 {%- set showcases = load_data(path="data/showcases.json") -%}
 {%- set showcase = showcases[id] -%}
 
-<section class="showcase theme-{{ theme }}">
+<section class="showcase theme-{{ theme }}{% if imgLeft %} img-left{% endif %}">
   <div class="container">
     <div class="row">
-      <div class="col" {% if imgLeft %}style="order:2"{% endif %}>
+      <div class="col">
         <h2 id="{{ id | slugify }}">
           {{ showcase.title | markdown | safe }}
         </h2>
@@ -15,7 +15,7 @@
         <br>
         <j-cta url="{{ showcase.url }}" label="{{ showcase.url | replace(from="https://", to="") }}" target="_blank" transparent=true></j-cta>
       </div>
-      <div class="col">
+      <div class="col img">
         <div class="device-wrapper">
           <svg width="354" height="705" viewBox="0 0 354 705">
             <path fill-rule="evenodd" clip-rule="evenodd"

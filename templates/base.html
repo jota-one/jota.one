@@ -6,7 +6,7 @@
   {% include "partials/head.html" %}
 </head>
 
-<body class="{{ macros::theme() }}">
+<body class="{{ macros::theme() }} {% block bodyClass %}{% endblock bodyClass %}">
   <header>
     {% include "partials/header.html" %}
   </header>
