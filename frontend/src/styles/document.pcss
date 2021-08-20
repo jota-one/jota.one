@@ -57,3 +57,15 @@ main {
   width: 100%;
   max-width: var(--s-content-max-width);
 }
+
+main,
+footer {
+  .container {
+    padding: 0 2rem 0 3.5rem;
+
+    @media (--m) {
+      padding-left: 4rem;
+      padding-right: 3rem;
+    }
+  }
+}

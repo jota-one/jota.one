@@ -10,7 +10,7 @@
   <header>
     {% include "partials/header.html" %}
   </header>
-  <nav>
+  <nav{% if macros::blend_nav() %} style="mix-blend-mode:{{ macros::blend_nav() }}"{% endif %}>
     {% include "partials/nav.html" %}
   </nav>
   <main>

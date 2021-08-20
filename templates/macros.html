@@ -9,6 +9,11 @@
   {%- endif -%}
 {%- endmacro theme -%}
 
+{%- macro blend_nav() -%}
+  {%- if page and page.extra and page.extra.blend_nav -%}
+    {{ page.extra.blend_nav }}
+  {%- endif -%}
+{%- endmacro theme -%}
 
 {% macro block(pos) %}
   <section class="{{ pos }}">
