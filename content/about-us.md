@@ -17,7 +17,7 @@ And we don't like talking about ourselves so we'll stop there for this part...
 ---
 
 <div
-  style="height:100%;margin:3rem 0;display:flex;align-items:flex-end;justify-content:center;">
+  style="height:100%;padding:2.5rem 0;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;">
   <j-author img="/img/author/jorinho.jpg" big=true name="Joriñho" url="/about-us/jorinho"></j-author>
   <j-author img="/img/author/tadai.jpg" big=true name="Tadaï" url="/about-us/tadai"></j-author>
 </div>
