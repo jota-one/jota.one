@@ -4,6 +4,7 @@ nav {
   display: flex;
   margin-bottom: -4rem;
   z-index: 1;
+  pointer-events: none;
 
   ul {
     position: absolute;
@@ -59,6 +60,7 @@ nav {
     transform-origin: center;
     transition: transform 0.125s ease;
     outline: none;
+    pointer-events: all;
 
     @media (--m) {
       margin-left: 1.25rem;
