@@ -1,5 +1,9 @@
 {
     "bezulu": {
+        "theme": {
+            "background": "rgb(72,190,247)",
+            "color": "rgb(0,0,0)"
+        },
         "url": "https://bezu.lu",
         "title": "Be Zulu! Podcast",
         "subTitle": "Web audio player for podcast",
@@ -11,6 +15,10 @@
         }
     },
     "ferencfarkas": {
+        "theme": {
+            "background": "rgb(248,182,3)",
+            "color": "rgb(0,0,0)"
+        },
         "url": "https://ferencfarkas.org",
         "title": "Ferenc Farkas official website",
         "subTitle": "A reference Jamstack website",

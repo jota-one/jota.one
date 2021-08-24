@@ -4,9 +4,10 @@ description = "Other web projects we're involved in"
 weight = 3
 
 [extra]
-blend_nav = "screen"
+theme = "neutral"
+blend_nav = "luminosity"
 +++
 
-{{ showcase(id="bezulu", theme="primary") }}
+{{ showcase(id="bezulu") }}
 
-{{ showcase(id="ferencfarkas", theme="secondary", imgLeft=true) }}
+{{ showcase(id="ferencfarkas", imgLeft=true) }}

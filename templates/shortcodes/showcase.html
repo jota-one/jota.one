@@ -1,7 +1,10 @@
 {%- set showcases = load_data(path="data/showcases.json") -%}
 {%- set showcase = showcases[id] -%}
 
-<section class="showcase theme-{{ theme }}{% if imgLeft %} img-left{% endif %}">
+<section
+  class="showcase{% if imgLeft %} img-left{% endif %}"
+  style="background:{{showcase.theme.background}};color:{{showcase.theme.color}}"
+>
   <div class="container">
     <div class="row">
       <div class="col">
