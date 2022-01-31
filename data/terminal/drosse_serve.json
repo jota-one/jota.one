@@ -2,7 +2,7 @@
     "title": "drosse serve",
     "steps": [
         {
-            "command": "npx drosse serve -- -r ~/my-app",
+            "command": "npx @jota-one/drosse serve -- -r ~/my-app",
             "output": [
                 "<span class=opacity-75>js:now</span> <span class=blue>-> Middlewares:</span>",
                 "[ 'morgan' ]",
