@@ -30,8 +30,9 @@
     "tailwindcss": "^2.0.3"
   },
   "dependencies": {
-		"typed.js": "^2.0.11"
-	},
+    "inter-ui": "^3.19.3",
+    "typed.js": "^2.0.11"
+  },
   "engines": {
     "node": ">=14.17.0"
   }
