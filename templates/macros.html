@@ -6,6 +6,8 @@
     {{ prefix ~ page.extra.theme }}
   {%- elif section.extra and section.extra.theme -%}
     {{ prefix ~ section.extra.theme }}
+  {%- else -%}
+    {{ prefix ~ "default" }}
   {%- endif -%}
 {%- endmacro theme -%}
 
