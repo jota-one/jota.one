@@ -91,7 +91,7 @@ Install it as an `npm` dev dependency to your project or gloablly (or run it via
 ---
 
 ### <j-icon name="paperclip" size="32" color="var(--c-secondary)"></j-icon> Tight to your project
-Your mocks come with you and so do your mock-server.
+Your mocks come with you and so does the app that serves them.
 <small class="block opacity-50">
 You can launch your backend in the same `npm` command as your frontend app.
 </small>
