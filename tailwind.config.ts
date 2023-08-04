@@ -6,7 +6,7 @@ export default <Partial<Config>>{
   plugins: [
     iconsPlugin({
       // Select the icon collections you want to use
-      collections: getIconCollections(['material-symbols', 'logos']),
+      collections: getIconCollections(['material-symbols', 'logos', 'fa6-solid']),
     }),
     flowbite
   ],
