@@ -1,3 +1,14 @@
+<script setup lang="ts">
+import { initFlowbite } from 'flowbite'
+
+useHead({
+  bodyAttrs: {
+    class: 'bg-neutral-900'
+  },
+})
+
+onMounted(initFlowbite)
+</script>
 <template>
   <header>
     <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">

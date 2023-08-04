@@ -6,8 +6,8 @@
   <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
       <div class="max-w-screen-md mb-8 lg:mb-16">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Comment pouvons-nous vous servir?</h2>
-        <p class="text-gray-500 sm:text-xl dark:text-gray-400">Des ingénieurs Web, qui sans eux, vous n'auriez pas tout ces services</p>
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Services</h2>
+        <p class="text-gray-500 sm:text-xl dark:text-gray-400">Des experts du Web à votre service</p>
       </div>
       <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
         <div>
@@ -35,22 +35,15 @@
           <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
             <span class="i-fa6-solid-hand-middle-finger"></span>
           </div>
-          <h3 class="mb-2 text-xl font-bold dark:text-white">Développement</h3>
-          <p class="text-gray-500 dark:text-gray-400">Besoin d'un outil sur-mesure? Ne cherchez plus, c'est ici que ça se passe.</p>
+          <h3 class="mb-2 text-xl font-bold dark:text-white">Produits</h3>
+          <p class="text-gray-500 dark:text-gray-400">Nous développons des produits sur-mesure, de A à Z, selon vos besoins.</p>
         </div>
         <div>
           <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
             <span class="i-fa6-solid-hand-middle-finger"></span>
           </div>
           <h3 class="mb-2 text-xl font-bold dark:text-white">Graphisme/design</h3>
-          <p class="text-gray-500 dark:text-gray-400">On n'a pas l'air comme ça, mais on sait aussi créer des logos et des designs originaux. Que ce soit pour votre site ou votre communication visuelle dans son ensemble, nous sommes à vos côtés.</p>
-        </div>
-        <div>
-          <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-            <span class="i-fa6-solid-hand-middle-finger"></span>
-          </div>
-          <h3 class="mb-2 text-xl font-bold dark:text-white">Papier à en-tête</h3>
-          <p class="text-gray-500 dark:text-gray-400">Nous réalisons de merveilleux ouvrages finement ciselés pou'votre plus grande joie et celle de vos amis.</p>
+          <p class="text-gray-500 dark:text-gray-400">Nous créons votre logo, le design original de votre site web ou votre communication visuelle dans son ensemble.</p>
         </div>
       </div>
     </div>
