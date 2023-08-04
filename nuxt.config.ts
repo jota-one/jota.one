@@ -16,7 +16,6 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true
   },
-  css: ['@/assets/styles/main.pcss'],
   vite: {
     plugins: [
       webfontDownload([
