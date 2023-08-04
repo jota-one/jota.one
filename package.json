@@ -8,13 +8,14 @@
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.1.0",
-    "@iconify-json/material-symbols": "^1.1.51",
-    "@iconify-json/logos": "^1.1.33",
     "@iconify-json/fa6-solid": "^1.1.14",
+    "@iconify-json/logos": "^1.1.33",
+    "@iconify-json/material-symbols": "^1.1.51",
     "@nuxt/content": "^2.7.2",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18.16.19",
-    "nuxt": "^3.6.3"
+    "nuxt": "^3.6.3",
+    "vite-plugin-webfont-dl": "^3.7.6"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
