@@ -3,7 +3,7 @@ import { initFlowbite } from 'flowbite'
 
 useHead({
   bodyAttrs: {
-    class: 'bg-gradient-to-r from-transparent to-blue-500'
+    class: 'bg-gradient-to-b from-secondary-100 to-secondary-200 dark:from-primary-900 dark:to-primary-950'
   },
 })
 
@@ -11,7 +11,7 @@ onMounted(initFlowbite)
 </script>
 <template>
   <header>
-    <nav class=" border-gray-200 px-4 lg:px-6 pb-2.5 dark:bg-gray-800">
+    <nav class=" border-gray-200 px-4 lg:px-6 pb-2.5">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
         <NuxtLink to="/">
           <svg height="100" viewBox="0 0 82 120">

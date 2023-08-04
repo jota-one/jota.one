@@ -3,6 +3,7 @@ import { iconsPlugin, getIconCollections } from '@egoist/tailwindcss-icons'
 import flowbite from 'flowbite/plugin'
 
 export default <Partial<Config>>{
+  darkMode: 'class',
   plugins: [
     iconsPlugin({
       // Select the icon collections you want to use
@@ -52,7 +53,23 @@ export default <Partial<Config>>{
         ]
       },
       colors: {
-        primary: {"50":"#eff6ff","100":"#dbeafe","200":"#bfdbfe","300":"#93c5fd","400":"#60a5fa","500":"#3b82f6","600":"#2563eb","700":"#1d4ed8","800":"#1e40af","900":"#1e3a8a","950":"#172554"}
+        primary: {
+          50:"#eff6ff",
+          100:"#dbeafe",
+          200:"#bfdbfe",
+          300:"#93c5fd",
+          400:"#60a5fa",
+          500: "#3b82f6",
+          600:"#2563eb",
+          700:"#1d4ed8",
+          800:"#1e40af",
+          900:"rgb(0,22,55)",
+          950:"rgb(0,5,13)"
+        },
+        secondary: {
+          100: 'rgb(255,255,255)',
+          200: 'rgb(226,255,253)'
+        }
       }
     }
   },
