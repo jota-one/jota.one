@@ -75,16 +75,6 @@ body {
   --c-secondary-light: var(--c-green);
   --c-full-contrast: black;
 
-  --c-primary: var(--c-light-blue);
-  --c-primary-light: var(--c-light-blue);
-  --c-primary-dark: var(--c-dark-blue);
-  --c-primary-darker: var(--c-darker-blue);
-  --c-secondary: var(--c-strong-green);
-  --c-secondary-light: var(--c-green);
-  --c-full-contrast: white;
-  --c-bg-gradient-top: rgb(0,20,40);
-  --c-bg-gradient-bottom: rgb(0,50,80);
-
   position: relative;
   min-width: 320px;
   min-height: 100vh;
