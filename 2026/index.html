@@ -16,9 +16,9 @@
 
 <link rel="icon" href="/favicon.ico">
 
-<link rel="stylesheet" href="/fonts/Inter/inter.css" />
-<link rel="stylesheet" href="/fonts/Oswald/fontface.css" />
-<link rel="stylesheet" href="style.css" async />
+<link rel="stylesheet" href="/assets/fonts/Inter/inter.css" />
+<link rel="stylesheet" href="/assets/fonts/Oswald/fontface.css" />
+<link rel="stylesheet" href="/assets/style.css" async />
 <script defer data-domain="jota.one" src="https://plausible.io/js/plausible.js"></script>
 
 
@@ -65,10 +65,10 @@
         <!-- Hero -->
         <div class="hero">
           <div class="hero-image">
-            <!-- <img src="lego-j.png" class="lego-j"> -->
-             <img src="lego-j-bottom.png" class="lego-j-bottom">
-             <img src="lego-j-middle.png" class="lego-j-middle">
-             <img src="lego-j-top.png" class="lego-j-top">
+            <!-- <img src="/assets/images/lego-j.png" class="lego-j"> -->
+             <img src="/assets/images/lego-j-bottom.png" class="lego-j-bottom" alt="Jota's J in Lego (bottom)">
+             <img src="/assets/images/lego-j-middle.png" class="lego-j-middle" alt="Jota's J in Lego (middle)">
+             <img src="/assets/images/lego-j-top.png" class="lego-j-top" alt="Jota's J in Lego (top)">
           </div>
           <div class="hero-text">
             <div class="hero-text-content">
@@ -114,7 +114,7 @@
 
           <!-- Lego plates -->
           <div class="lego-plates">
-            <img src="lego-plates.png" width="600px"/>
+            <img src="/assets/images/lego-plates.png" width="600px" alt="Lego plates backgroudn image"/>
           </div>
 
           <div class="portfolio-grid">
@@ -408,25 +408,35 @@
               Established 2022
             </span>
           </div>
-          <a href="mailto:hello@jota.one">
+          <a href="mailto:hello@jota.one" aria-label="Send us an email and let's connect!">
             hello@jota.one
           </a>
         </div>
         <div class="associate">
-          <img src="joel.jpeg" width="100" height="100">
+          <img src="/assets/images/joel.jpeg" width="100" height="100" alt="Joël Poulin">
           <div class="name">
             Joël Poulin
           </div>
           Co-Founder & Web Architect
           <div class="connect">
-            <a href="http://github.com/jorinho" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://github.com/jorinho"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Joël's profile on Github"
+            >
               <svg width="34" height="34" viewBox="0 0 40 40" fill="currentColor">
                 <path
                   d="M20.0002 3.33331C17.8115 3.33331 15.6442 3.76441 13.6221 4.60199C11.6 5.43957 9.76269 6.66722 8.21505 8.21487C5.08944 11.3405 3.3335 15.5797 3.3335 20C3.3335 27.3666 8.11683 33.6166 14.7335 35.8333C15.5668 35.9666 15.8335 35.45 15.8335 35C15.8335 34.6166 15.8335 33.5666 15.8335 32.1833C11.2168 33.1833 10.2335 29.95 10.2335 29.95C9.46683 28.0166 8.3835 27.5 8.3835 27.5C6.86683 26.4666 8.50016 26.5 8.50016 26.5C10.1668 26.6166 11.0502 28.2166 11.0502 28.2166C12.5002 30.75 14.9502 30 15.9002 29.6C16.0502 28.5166 16.4835 27.7833 16.9502 27.3666C13.2502 26.95 9.36683 25.5166 9.36683 19.1666C9.36683 17.3166 10.0002 15.8333 11.0835 14.65C10.9168 14.2333 10.3335 12.5 11.2502 10.25C11.2502 10.25 12.6502 9.79998 15.8335 11.95C17.1502 11.5833 18.5835 11.4 20.0002 11.4C21.4168 11.4 22.8502 11.5833 24.1668 11.95C27.3502 9.79998 28.7502 10.25 28.7502 10.25C29.6668 12.5 29.0835 14.2333 28.9168 14.65C30.0002 15.8333 30.6335 17.3166 30.6335 19.1666C30.6335 25.5333 26.7335 26.9333 23.0168 27.35C23.6168 27.8666 24.1668 28.8833 24.1668 30.4333C24.1668 32.6666 24.1668 34.4666 24.1668 35C24.1668 35.45 24.4335 35.9833 25.2835 35.8333C31.9002 33.6 36.6668 27.3666 36.6668 20C36.6668 17.8113 36.2357 15.644 35.3982 13.6219C34.5606 11.5998 33.3329 9.76251 31.7853 8.21487C30.2376 6.66722 28.4003 5.43957 26.3782 4.60199C24.3561 3.76441 22.1889 3.33331 20.0002 3.33331Z"
                 />
               </svg>
             </a>
-            <a href="https://www.linkedin.com/in/joel-poulin" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/joel-poulin"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Joël's LinkedIn page"
+            >
               <svg width="29" height="29" viewBox="0 0 34 34" fill="currentColor">
                 <path
                   d="M31.0782 0.53125H2.9751C1.64697 0.53125 0.584473 1.59375 0.584473 2.92188V31.0781C0.584473 32.3531 1.64697 33.4688 2.9751 33.4688H30.972C32.3001 33.4688 33.3626 32.4062 33.3626 31.0781V2.86875C33.4688 1.59375 32.4063 0.53125 31.0782 0.53125ZM10.3063 28.5281H5.47197V12.8563H10.3063V28.5281ZM7.8626 10.6781C6.26885 10.6781 5.04697 9.40313 5.04697 7.8625C5.04697 6.32188 6.32197 5.04688 7.8626 5.04688C9.40322 5.04688 10.6782 6.32188 10.6782 7.8625C10.6782 9.40313 9.50947 10.6781 7.8626 10.6781ZM28.6345 28.5281H23.8001V20.9313C23.8001 19.125 23.747 16.7344 21.2501 16.7344C18.7001 16.7344 18.3282 18.7531 18.3282 20.7719V28.5281H13.4938V12.8563H18.222V15.0344H18.2751C18.9657 13.7594 20.5063 12.4844 22.897 12.4844C27.8376 12.4844 28.7407 15.6719 28.7407 20.0281V28.5281H28.6345Z"
@@ -436,20 +446,30 @@
           </div>
         </div>
         <div class="associate">
-          <img src="istvan.jpeg" width="100" height="100">
+          <img src="/assets/images/istvan.jpeg" width="100" height="100" alt="Istvan Farkas">
           <div class="name">
             Istvan Farkas
           </div>
           Co-Founder & Web Architect
           <div class="connect">
-            <a href="http://github.com/tadaii" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://github.com/tadaii"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Istvan's profile on Github"
+            >
               <svg width="34" height="34" viewBox="0 0 40 40" fill="currentColor">
                 <path
                   d="M20.0002 3.33331C17.8115 3.33331 15.6442 3.76441 13.6221 4.60199C11.6 5.43957 9.76269 6.66722 8.21505 8.21487C5.08944 11.3405 3.3335 15.5797 3.3335 20C3.3335 27.3666 8.11683 33.6166 14.7335 35.8333C15.5668 35.9666 15.8335 35.45 15.8335 35C15.8335 34.6166 15.8335 33.5666 15.8335 32.1833C11.2168 33.1833 10.2335 29.95 10.2335 29.95C9.46683 28.0166 8.3835 27.5 8.3835 27.5C6.86683 26.4666 8.50016 26.5 8.50016 26.5C10.1668 26.6166 11.0502 28.2166 11.0502 28.2166C12.5002 30.75 14.9502 30 15.9002 29.6C16.0502 28.5166 16.4835 27.7833 16.9502 27.3666C13.2502 26.95 9.36683 25.5166 9.36683 19.1666C9.36683 17.3166 10.0002 15.8333 11.0835 14.65C10.9168 14.2333 10.3335 12.5 11.2502 10.25C11.2502 10.25 12.6502 9.79998 15.8335 11.95C17.1502 11.5833 18.5835 11.4 20.0002 11.4C21.4168 11.4 22.8502 11.5833 24.1668 11.95C27.3502 9.79998 28.7502 10.25 28.7502 10.25C29.6668 12.5 29.0835 14.2333 28.9168 14.65C30.0002 15.8333 30.6335 17.3166 30.6335 19.1666C30.6335 25.5333 26.7335 26.9333 23.0168 27.35C23.6168 27.8666 24.1668 28.8833 24.1668 30.4333C24.1668 32.6666 24.1668 34.4666 24.1668 35C24.1668 35.45 24.4335 35.9833 25.2835 35.8333C31.9002 33.6 36.6668 27.3666 36.6668 20C36.6668 17.8113 36.2357 15.644 35.3982 13.6219C34.5606 11.5998 33.3329 9.76251 31.7853 8.21487C30.2376 6.66722 28.4003 5.43957 26.3782 4.60199C24.3561 3.76441 22.1889 3.33331 20.0002 3.33331Z"
                 />
               </svg>
             </a>
-            <a href="https://www.linkedin.com/in/istevan" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/istevan"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Istvan's LinkedIn page"
+            >
               <svg width="29" height="29" viewBox="0 0 34 34" fill="currentColor">
                 <path
                   d="M31.0782 0.53125H2.9751C1.64697 0.53125 0.584473 1.59375 0.584473 2.92188V31.0781C0.584473 32.3531 1.64697 33.4688 2.9751 33.4688H30.972C32.3001 33.4688 33.3626 32.4062 33.3626 31.0781V2.86875C33.4688 1.59375 32.4063 0.53125 31.0782 0.53125ZM10.3063 28.5281H5.47197V12.8563H10.3063V28.5281ZM7.8626 10.6781C6.26885 10.6781 5.04697 9.40313 5.04697 7.8625C5.04697 6.32188 6.32197 5.04688 7.8626 5.04688C9.40322 5.04688 10.6782 6.32188 10.6782 7.8625C10.6782 9.40313 9.50947 10.6781 7.8626 10.6781ZM28.6345 28.5281H23.8001V20.9313C23.8001 19.125 23.747 16.7344 21.2501 16.7344C18.7001 16.7344 18.3282 18.7531 18.3282 20.7719V28.5281H13.4938V12.8563H18.222V15.0344H18.2751C18.9657 13.7594 20.5063 12.4844 22.897 12.4844C27.8376 12.4844 28.7407 15.6719 28.7407 20.0281V28.5281H28.6345Z"
