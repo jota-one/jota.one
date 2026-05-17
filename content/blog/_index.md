@@ -1,4 +1,0 @@
-+++
-[extra]
-theme = "blog"
-+++

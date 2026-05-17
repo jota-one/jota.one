@@ -1,7 +1,0 @@
-[build]
-publish = "public"
-command = "cd frontend && npm ci && npm run build && cd .. && zola build --base-url $DEPLOY_PRIME_URL"
-
-[build.environment]
-ZOLA_VERSION = "0.22.1"
-NODE_VERSION = "22.22.2"
